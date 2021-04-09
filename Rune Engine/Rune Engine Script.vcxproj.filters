@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Rune">
+      <UniqueIdentifier>{a7121c8c-f460-4e69-b55b-d360edcb7148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Script">
+      <UniqueIdentifier>{380bd461-6558-4cbf-8cfb-f341262a09ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Rune\Script\RuScript_LuaIntegration.cpp">
+      <Filter>Rune\Script</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rune\Script\RuScript_LuaIntegration.h">
+      <Filter>Rune\Script</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

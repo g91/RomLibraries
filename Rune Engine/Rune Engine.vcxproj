@@ -1,0 +1,1798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B228C0F-2A1F-4FA9-80D7-D0219E428DD3}</ProjectGuid>
+    <RootNamespace>RuneEngine</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.29911.84</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\_bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\_build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
+    <TargetName>Rune</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\_bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\_build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
+    <TargetName>Rune</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\SDK;..\..\SDK\dx9;..\..\SDK\fmod;..\..\SDK\lua;Tools\freetype\include;Tools;..\..\Libraries\Tools\tools\luabind;..\..\Libraries\Tools\tools\lua;..\..\Libraries\Tools\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LIB;CLOSE_DEBUG;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader />
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalLibraryDirectories>Tools\granny\lib;..\..\SDK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\SDK;..\..\SDK\dx9;..\..\SDK\fmod;..\..\SDK\lua;Tools\freetype\include;Tools;..\..\Libraries\Tools\tools\luabind;..\..\Libraries\Tools\tools\lua;..\..\Libraries\Tools\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LIB;CLOSE_DEBUG;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalLibraryDirectories>Tools\granny\lib;..\..\SDK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="Rune\Engine Settings List.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="directinput\directinput.cpp" />
+    <ClCompile Include="Rune\Collision\RuCollisionHierarchy_Base.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Collision\RuCollisionHierarchy_Quadtree.cpp" />
+    <ClCompile Include="Rune\Collision\RuCollisionHierarchy_Simple.cpp" />
+    <ClCompile Include="Rune\Collision\RuCollision_Base.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Collision\RuCollision_kdTree.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Collision\RuCollision_kdTree_16.cpp" />
+    <ClCompile Include="Rune\Collision\RuCollision_Simple.cpp" />
+    <ClCompile Include="Rune\Components\NavMesh\RuNavMesh_Base.cpp" />
+    <ClCompile Include="Rune\Components\SpatialPartition\RuSpatialPartition_Base.cpp" />
+    <ClCompile Include="Rune\Core\Algorithm\RuAlgorithm_PatternMatch_FJS.cpp" />
+    <ClCompile Include="Rune\Core\Collection\RuCollections.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Collection\RuCollectionsHash.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Crypto\RuCrypto_MD5.cpp" />
+    <ClCompile Include="Rune\Core\DataStore\RuDataClient.cpp" />
+    <ClCompile Include="Rune\Core\DataStore\RuDataServer.cpp" />
+    <ClCompile Include="Rune\Core\DataStore\RuDataStore_Base.cpp" />
+    <ClCompile Include="Rune\Core\DataStore\RuDataStore_Disk.cpp" />
+    <ClCompile Include="Rune\Core\DataStore\RuDataStore_Patcher.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_Base.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_Composite.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_fBm.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_HeteroTerrain.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_HybridMultifractal.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_Multifractal.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_PostFX_ABS.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_PostFX_Cutoff.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_PostFX_Gain.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_PostFX_Remap.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_PostFX_Square.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_RidgedMultifractal.cpp" />
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_Shapes.cpp" />
+    <ClCompile Include="Rune\Core\Math\RuMath.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMathBase.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMathCollision.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMathDistance.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMathGeometry.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMathVector.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMath_Spline.cpp" />
+    <ClCompile Include="Rune\Core\Math\RuMath_UVTransform.cpp" />
+    <ClCompile Include="Rune\Core\Math\RuODESolver_RK4.cpp" />
+    <ClCompile Include="Rune\Core\Math\RuVectorMath.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Memory\RuMalloc.cpp" />
+    <ClCompile Include="Rune\Core\Memory\RuMemoryAllocator.cpp" />
+    <ClCompile Include="Rune\Core\Memory\RuMemoryHeap.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Memory\RuMemoryHeapFactory.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Memory\RuMemoryManager.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Memory\RuMemUtil.cpp" />
+    <ClCompile Include="Rune\Core\Noise\RuNoise_Base.cpp" />
+    <ClCompile Include="Rune\Core\Noise\RuNoise_Perlin.cpp" />
+    <ClCompile Include="Rune\Core\Noise\RuNoise_Texture.cpp" />
+    <ClCompile Include="Rune\Core\Noise\RuNoise_Value.cpp" />
+    <ClCompile Include="Rune\Core\Noise\RuNoise_Worley.cpp" />
+    <ClCompile Include="Rune\Core\Stream\RuArchiveIO.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Stream\RuStreamIO.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Thread\RuThread_Core.cpp" />
+    <ClCompile Include="Rune\Core\Thread\RuThread_CriticalSection.cpp" />
+    <ClCompile Include="Rune\Core\Thread\RuThread_SyncObject.cpp" />
+    <ClCompile Include="Rune\Core\Thread\RuThread_Worker.cpp" />
+    <ClCompile Include="Rune\Core\Thread\RuThread_WorkQueue.cpp" />
+    <ClCompile Include="Rune\Core\Type\RuType_BitField.cpp" />
+    <ClCompile Include="Rune\Core\Type\RuType_Event.cpp" />
+    <ClCompile Include="Rune\Core\Type\RuType_Object.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Utility\RuUtility.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Utility\RuUtility_FunctionScheduler.cpp" />
+    <ClCompile Include="Rune\Core\Utility\RuUtility_Profile.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Utility\RuUtility_PropertyContainer.cpp" />
+    <ClCompile Include="Rune\Core\Utility\RuUtility_Stream.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Animation\RuAnimBase.cpp" />
+    <ClCompile Include="Rune\Engine\Animation\RuAnimTrack.cpp" />
+    <ClCompile Include="Rune\Engine\Base\RuEngine_Base.cpp" />
+    <ClCompile Include="Rune\Engine\Base\RuEngine_DeviceBufferPool.cpp" />
+    <ClCompile Include="Rune\Engine\Base\RuEngine_Engine.cpp" />
+    <ClCompile Include="Rune\Engine\Base\RuEngine_EngineResourceArray.cpp" />
+    <ClCompile Include="Rune\Engine\Base\RuEngine_Settings.cpp" />
+    <ClCompile Include="Rune\Engine\Base\RuEngine_TexturePool.cpp" />
+    <ClCompile Include="Rune\Engine\Base\RuMaterialBase.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Base\RuShader_Composite.cpp" />
+    <ClCompile Include="Rune\Engine\Collision\RuCollisionStructure_PackedGrid.cpp" />
+    <ClCompile Include="Rune\Engine\Geometry\RuMeshBase.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Geometry\RuMeshCollision.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Geometry\RuMesh_SkinTools.cpp" />
+    <ClCompile Include="Rune\Engine\Geometry\RuPolySoup.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Geometry\RuPrimitiveToolkit.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Instantiator\RuMeshInstantiators_Common.cpp" />
+    <ClCompile Include="Rune\Engine\Instantiator\RuMeshInstantiator_Base.cpp" />
+    <ClCompile Include="Rune\Engine\Manager\RuEngine_InstanceManager.cpp" />
+    <ClCompile Include="Rune\Engine\Manager\RuEngine_InstanceManager_Base.cpp" />
+    <ClCompile Include="Rune\Engine\Manager\RuEngine_ResourceManager.cpp" />
+    <ClCompile Include="Rune\Engine\Manager\RuEngine_ResourceManager_Base.cpp" />
+    <ClCompile Include="Rune\Engine\Manager\RuEngine_ShaderManager.cpp" />
+    <ClCompile Include="Rune\Engine\RuCamera.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Texture\RuTextureAtlas_Aggregate.cpp" />
+    <ClCompile Include="Rune\Engine\Texture\RuTextureAtlas_Base.cpp" />
+    <ClCompile Include="Rune\Engine\Texture\RuTextureAtlas_Paged.cpp" />
+    <ClCompile Include="Rune\Engine\Texture\RuTextureGenerator.cpp" />
+    <ClCompile Include="Rune\Engine\Texture\RuTextureUtility.cpp" />
+    <ClCompile Include="Rune\Engine\Texture\RuTexture_Proxy.cpp" />
+    <ClCompile Include="Rune\ExtLink\RuExtLink_Granny.cpp" />
+    <ClCompile Include="Rune\Fusion\RuFusion_Actor.cpp" />
+    <ClCompile Include="Rune\Fusion\RuFusion_Mime.cpp" />
+    <ClCompile Include="Rune\Fusion\RuFusion_Minimap.cpp" />
+    <ClCompile Include="Rune\Fusion\RuFusion_Sojourner.cpp" />
+    <ClCompile Include="Rune\Fusion\RuFusion_Trekker.cpp" />
+    <ClCompile Include="Rune\Fusion\RuFusion_Trekker_Interface.cpp" />
+    <ClCompile Include="Rune\Fusion\RuFusion_UIElement.cpp" />
+    <ClCompile Include="Rune\Helper\RuHelper_Entity.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Helper\RuHelper_GR2.cpp" />
+    <ClCompile Include="Rune\Helper\RuHelper_IRuEntity_Renderable.cpp" />
+    <ClCompile Include="Rune\Helper\RuHelper_IRuMaterial.cpp" />
+    <ClCompile Include="Rune\Helper\RuHelper_Math.cpp" />
+    <ClCompile Include="Rune\Helper\RuHelper_StreamIO.cpp" />
+    <ClCompile Include="Rune\ImageFX\RuImageFX_Blitter.cpp" />
+    <ClCompile Include="Rune\ImageFX\RuImageFX_Resample.cpp" />
+    <ClCompile Include="Rune\Mojo\RuMojo_Base.cpp" />
+    <ClCompile Include="Rune\Mojo\RuMojo_Helper.cpp" />
+    <ClCompile Include="Rune\NvTriStrip\NvTriStrip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\NvTriStrip\NvTriStripObjects.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Partition\RuPartition_QuadTree.cpp" />
+    <ClCompile Include="Rune\PathEngine\RuPathEngine_Base.cpp" />
+    <ClCompile Include="Rune\PathEngine\RuPathEngine_NodeBuilder.cpp" />
+    <ClCompile Include="Rune\PathEngine\RuPathFinder_AStar.cpp" />
+    <ClCompile Include="Rune\PathEngine\RuPathFinder_Base.cpp" />
+    <ClCompile Include="Rune\PathEngine\RuPathGraph_AStar.cpp" />
+    <ClCompile Include="Rune\PathEngine\RuPathGraph_Base.cpp" />
+    <ClCompile Include="Rune\PathEngine\RuPathHierarchy_Base.cpp" />
+    <ClCompile Include="Rune\PathEngine\RuPathHierarchy_DS.cpp" />
+    <ClCompile Include="Rune\PathEngine\RuPathRover_Base.cpp" />
+    <ClCompile Include="Rune\PathEngine\RuPathRover_Simple.cpp" />
+    <ClCompile Include="Rune\Process\RuProcess_ConsoleChild.cpp" />
+    <ClCompile Include="Rune\Renderer\Cache\RuSkinCache.cpp" />
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_AlphaZ.cpp" />
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_AquaFX.cpp" />
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_BlendFX.cpp" />
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_DistortFX.cpp" />
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_GlowFX.cpp" />
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_RTLightMap.cpp" />
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_SubmergeFX.cpp" />
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_VizCon.cpp" />
+    <ClCompile Include="Rune\Renderer\RendererNode\RuRendererNode_RenderContext.cpp" />
+    <ClCompile Include="Rune\Renderer\RendererNode\RuRendererNode_SetScissor.cpp" />
+    <ClCompile Include="Rune\Renderer\RendererNode\RuRendererNode_TextureCopy.cpp" />
+    <ClCompile Include="Rune\Renderer\RendererNode\RuRendererNode_UI.cpp" />
+    <ClCompile Include="Rune\Renderer\RendererNode\RuRendererNode_ViewportClear.cpp" />
+    <ClCompile Include="Rune\Renderer\RuRenderer.cpp" />
+    <ClCompile Include="Rune\Renderer\Type\RuRenderer_Type.cpp" />
+    <ClCompile Include="Rune\Rune.cpp" />
+    <ClCompile Include="Rune\Scene\Base\RuEntityACT.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntityBase.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntityContainer.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntityController.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntityModel.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntity_Camera.cpp" />
+    <ClCompile Include="Rune\Scene\Base\RuHierarchyCoupler.cpp" />
+    <ClCompile Include="Rune\Scene\Base\RuHierarchy_GR2.cpp" />
+    <ClCompile Include="Rune\Scene\ColVis\RuEntity_ColVis.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Container\RuContainer_Collision.cpp" />
+    <ClCompile Include="Rune\Scene\Container\RuContainer_Portal.cpp" />
+    <ClCompile Include="Rune\Scene\Container\RuEntityAABBTree.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Container\RuEntity_Container_Quadtree.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_AnimCompensator.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Bone.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Camera.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Decal.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_DistanceFader.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Entity.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_EventTrigger.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Frame.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_GhostTrail.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_GlobalAlpha.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_GlobalColor.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Hierarchy.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Highlighter.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_MaterialTexture.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Morph.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Motion.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Orientation.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_ParticleSystem.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Particle_Emitter.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Particle_Emitter_Enviro.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Particle_Emitter_Line.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Particle_Visualizer_Entity.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_Particle_Visualizer_Sprite.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_PolyLine.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_UVFX.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_VisibilityChain.cpp" />
+    <ClCompile Include="Rune\Scene\Controller\RuController_WaterFX.cpp" />
+    <ClCompile Include="Rune\Scene\FX2D\RuFX2D_Model.cpp" />
+    <ClCompile Include="Rune\Scene\FX2D\RuFX2D_UIFX.cpp" />
+    <ClCompile Include="Rune\Scene\FX\RuEntity_CollectorFX.cpp" />
+    <ClCompile Include="Rune\Scene\FX\RuEntity_Decal.cpp" />
+    <ClCompile Include="Rune\Scene\FX\RuEntity_DecalShadow.cpp" />
+    <ClCompile Include="Rune\Scene\FX\RuEntity_GhostTrail.cpp" />
+    <ClCompile Include="Rune\Scene\FX\RuEntity_PolyLine.cpp" />
+    <ClCompile Include="Rune\Scene\Gizmo\RuGizmo_Base.cpp" />
+    <ClCompile Include="Rune\Scene\Gizmo\RuGizmo_Box.cpp" />
+    <ClCompile Include="Rune\Scene\Gizmo\RuGizmo_Mover.cpp" />
+    <ClCompile Include="Rune\Scene\Gizmo\RuGizmo_Plane.cpp" />
+    <ClCompile Include="Rune\Scene\Occlusion\RuEntity_AntiPortal.cpp" />
+    <ClCompile Include="Rune\Scene\Paperdoll\RuEntityCompositeModel.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Paperdoll\RuEntityPaperdoll.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Paperdoll\RuPaperdollCache.cpp" />
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Base.cpp" />
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Doodad.cpp" />
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Emitter.cpp" />
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Emitter_Enviro.cpp" />
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Emitter_Line.cpp" />
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Sprite.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Visualizer_Entity.cpp" />
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Visualizer_Sprite.cpp" />
+    <ClCompile Include="Rune\Scene\PathEngineVis\RuEntity_PathEngineVis.cpp" />
+    <ClCompile Include="Rune\Scene\PathEngineVis\RuEntity_PathGraphVis.cpp" />
+    <ClCompile Include="Rune\Scene\Proxy\RuEntity_Proxy.cpp" />
+    <ClCompile Include="Rune\Scene\Terrain\RuEntityOptimalTerrain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuEntitySkyDome.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuEntityTerrain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuEntityTerrain_Common.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuEntity_Environment.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_Backdrop.cpp" />
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_Base.cpp" />
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_CloudPlane.cpp" />
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_DoodadSystem.cpp" />
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_EntitySystem.cpp" />
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_TriggerSystem.cpp" />
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_Water.cpp" />
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_WaterBodyDescriptor.cpp" />
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_ZoneDescriptorContainer.cpp" />
+    <ClCompile Include="Rune\Scene\TileMap\RuEntity_TileMap.cpp" />
+    <ClCompile Include="Rune\Scene\Widget\RuEntityGizmo.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_AABB.cpp" />
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_BoneVis.cpp" />
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_ClipRect.cpp" />
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Flag.cpp" />
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_FrustumVis.cpp" />
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Grid.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Label.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Line.cpp" />
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Sphere.cpp" />
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Tetrahedron.cpp" />
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Text.cpp" />
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_TileGrid.cpp" />
+    <ClCompile Include="Rune\SQL\RuSQL_Base.cpp" />
+    <ClCompile Include="Rune\UI\RuUI_Font.cpp" />
+    <ClCompile Include="texture\textureimage.cpp" />
+    <ClCompile Include="Tools\dxtLib\dxtutility.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\FilePackage\cFileObj.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\FilePackage\cFilePackage.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\FilePackage\cImgFile.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\FilePackage\compressFile.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\afangles.c" />
+    <ClCompile Include="Tools\freetype\src\autofit\afcjk.c" />
+    <ClCompile Include="Tools\freetype\src\autofit\afdummy.c" />
+    <ClCompile Include="Tools\freetype\src\autofit\afglobal.c" />
+    <ClCompile Include="Tools\freetype\src\autofit\afhints.c" />
+    <ClCompile Include="Tools\freetype\src\autofit\afindic.c" />
+    <ClCompile Include="Tools\freetype\src\autofit\aflatin.c" />
+    <ClCompile Include="Tools\freetype\src\autofit\afloader.c" />
+    <ClCompile Include="Tools\freetype\src\autofit\afmodule.c" />
+    <ClCompile Include="Tools\freetype\src\autofit\afwarp.c" />
+    <ClCompile Include="Tools\freetype\src\autofit\autofit.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftadvanc.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftapi.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftbase.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftbbox.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftbdf.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftbitmap.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftcalc.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftcid.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftdbgmem.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftdebug.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftfstype.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftgasp.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftgloadr.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftglyph.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftgxval.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftinit.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftlcdfil.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftmm.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftnames.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftobjs.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftotval.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftoutln.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftpatent.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftpfr.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftrfork.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftstream.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftstroke.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftsynth.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftsystem.c" />
+    <ClCompile Include="Tools\freetype\src\base\fttrigon.c" />
+    <ClCompile Include="Tools\freetype\src\base\fttype1.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftutil.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftwinfnt.c" />
+    <ClCompile Include="Tools\freetype\src\base\ftxf86.c" />
+    <ClCompile Include="Tools\freetype\src\bdf\bdf.c" />
+    <ClCompile Include="Tools\freetype\src\bdf\bdfdrivr.c" />
+    <ClCompile Include="Tools\freetype\src\bdf\bdflib.c" />
+    <ClCompile Include="Tools\freetype\src\cache\ftcache.c" />
+    <ClCompile Include="Tools\freetype\src\cache\ftcbasic.c" />
+    <ClCompile Include="Tools\freetype\src\cache\ftccache.c" />
+    <ClCompile Include="Tools\freetype\src\cache\ftccmap.c" />
+    <ClCompile Include="Tools\freetype\src\cache\ftcglyph.c" />
+    <ClCompile Include="Tools\freetype\src\cache\ftcimage.c" />
+    <ClCompile Include="Tools\freetype\src\cache\ftcmanag.c" />
+    <ClCompile Include="Tools\freetype\src\cache\ftcmru.c" />
+    <ClCompile Include="Tools\freetype\src\cache\ftcsbits.c" />
+    <ClCompile Include="Tools\freetype\src\cff\cff.c" />
+    <ClCompile Include="Tools\freetype\src\cff\cffcmap.c" />
+    <ClCompile Include="Tools\freetype\src\cff\cffdrivr.c" />
+    <ClCompile Include="Tools\freetype\src\cff\cffgload.c" />
+    <ClCompile Include="Tools\freetype\src\cff\cffload.c" />
+    <ClCompile Include="Tools\freetype\src\cff\cffobjs.c" />
+    <ClCompile Include="Tools\freetype\src\cff\cffparse.c" />
+    <ClCompile Include="Tools\freetype\src\cid\cidgload.c" />
+    <ClCompile Include="Tools\freetype\src\cid\cidload.c" />
+    <ClCompile Include="Tools\freetype\src\cid\cidobjs.c" />
+    <ClCompile Include="Tools\freetype\src\cid\cidparse.c" />
+    <ClCompile Include="Tools\freetype\src\cid\cidriver.c" />
+    <ClCompile Include="Tools\freetype\src\cid\type1cid.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvalid.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvbsln.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvcommn.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvfeat.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvfgen.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvjust.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvkern.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvlcar.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmod.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort0.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort1.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort2.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort4.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort5.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx0.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx1.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx2.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx4.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx5.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvopbd.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvprop.c" />
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvtrak.c" />
+    <ClCompile Include="Tools\freetype\src\lzw\ftlzw.c" />
+    <ClCompile Include="Tools\freetype\src\lzw\ftzopen.c" />
+    <ClCompile Include="Tools\freetype\src\otvalid\otvalid.c" />
+    <ClCompile Include="Tools\freetype\src\otvalid\otvbase.c" />
+    <ClCompile Include="Tools\freetype\src\otvalid\otvcommn.c" />
+    <ClCompile Include="Tools\freetype\src\otvalid\otvgdef.c" />
+    <ClCompile Include="Tools\freetype\src\otvalid\otvgpos.c" />
+    <ClCompile Include="Tools\freetype\src\otvalid\otvgsub.c" />
+    <ClCompile Include="Tools\freetype\src\otvalid\otvjstf.c" />
+    <ClCompile Include="Tools\freetype\src\otvalid\otvmath.c" />
+    <ClCompile Include="Tools\freetype\src\otvalid\otvmod.c" />
+    <ClCompile Include="Tools\freetype\src\pfr\pfr.c" />
+    <ClCompile Include="Tools\freetype\src\pfr\pfrcmap.c" />
+    <ClCompile Include="Tools\freetype\src\pfr\pfrdrivr.c" />
+    <ClCompile Include="Tools\freetype\src\pfr\pfrgload.c" />
+    <ClCompile Include="Tools\freetype\src\pfr\pfrload.c" />
+    <ClCompile Include="Tools\freetype\src\pfr\pfrobjs.c" />
+    <ClCompile Include="Tools\freetype\src\pfr\pfrsbit.c" />
+    <ClCompile Include="Tools\freetype\src\psaux\afmparse.c" />
+    <ClCompile Include="Tools\freetype\src\psaux\psaux.c" />
+    <ClCompile Include="Tools\freetype\src\psaux\psauxmod.c" />
+    <ClCompile Include="Tools\freetype\src\psaux\psconv.c" />
+    <ClCompile Include="Tools\freetype\src\psaux\psobjs.c" />
+    <ClCompile Include="Tools\freetype\src\psaux\t1cmap.c" />
+    <ClCompile Include="Tools\freetype\src\psaux\t1decode.c" />
+    <ClCompile Include="Tools\freetype\src\pshinter\pshalgo.c" />
+    <ClCompile Include="Tools\freetype\src\pshinter\pshglob.c" />
+    <ClCompile Include="Tools\freetype\src\pshinter\pshinter.c" />
+    <ClCompile Include="Tools\freetype\src\pshinter\pshmod.c" />
+    <ClCompile Include="Tools\freetype\src\pshinter\pshrec.c" />
+    <ClCompile Include="Tools\freetype\src\psnames\psmodule.c" />
+    <ClCompile Include="Tools\freetype\src\psnames\psnames.c" />
+    <ClCompile Include="Tools\freetype\src\raster\ftraster.c" />
+    <ClCompile Include="Tools\freetype\src\raster\ftrend1.c" />
+    <ClCompile Include="Tools\freetype\src\raster\raster.c" />
+    <ClCompile Include="Tools\freetype\src\sfnt\sfdriver.c" />
+    <ClCompile Include="Tools\freetype\src\sfnt\sfnt.c" />
+    <ClCompile Include="Tools\freetype\src\sfnt\sfobjs.c" />
+    <ClCompile Include="Tools\freetype\src\sfnt\ttbdf.c" />
+    <ClCompile Include="Tools\freetype\src\sfnt\ttcmap.c" />
+    <ClCompile Include="Tools\freetype\src\sfnt\ttkern.c" />
+    <ClCompile Include="Tools\freetype\src\sfnt\ttload.c" />
+    <ClCompile Include="Tools\freetype\src\sfnt\ttmtx.c" />
+    <ClCompile Include="Tools\freetype\src\sfnt\ttpost.c" />
+    <ClCompile Include="Tools\freetype\src\sfnt\ttsbit.c" />
+    <ClCompile Include="Tools\freetype\src\smooth\ftgrays.c" />
+    <ClCompile Include="Tools\freetype\src\smooth\ftsmooth.c" />
+    <ClCompile Include="Tools\freetype\src\smooth\smooth.c" />
+    <ClCompile Include="Tools\freetype\src\truetype\truetype.c" />
+    <ClCompile Include="Tools\freetype\src\truetype\ttdriver.c" />
+    <ClCompile Include="Tools\freetype\src\truetype\ttgload.c" />
+    <ClCompile Include="Tools\freetype\src\truetype\ttgxvar.c" />
+    <ClCompile Include="Tools\freetype\src\truetype\ttinterp.c" />
+    <ClCompile Include="Tools\freetype\src\truetype\ttobjs.c" />
+    <ClCompile Include="Tools\freetype\src\truetype\ttpload.c" />
+    <ClCompile Include="Tools\freetype\src\type1\t1afm.c" />
+    <ClCompile Include="Tools\freetype\src\type1\t1driver.c" />
+    <ClCompile Include="Tools\freetype\src\type1\t1gload.c" />
+    <ClCompile Include="Tools\freetype\src\type1\t1load.c" />
+    <ClCompile Include="Tools\freetype\src\type1\t1objs.c" />
+    <ClCompile Include="Tools\freetype\src\type1\t1parse.c" />
+    <ClCompile Include="Tools\freetype\src\type1\type1.c" />
+    <ClCompile Include="Tools\freetype\src\type42\t42drivr.c" />
+    <ClCompile Include="Tools\freetype\src\type42\t42objs.c" />
+    <ClCompile Include="Tools\freetype\src\type42\t42parse.c" />
+    <ClCompile Include="Tools\freetype\src\type42\type42.c" />
+    <ClCompile Include="Tools\freetype\src\winfonts\winfnt.c" />
+    <ClCompile Include="Tools\granny\source\arithbit.c" />
+    <ClCompile Include="Tools\granny\source\binktc.c" />
+    <ClCompile Include="Tools\granny\source\encode.c" />
+    <ClCompile Include="Tools\granny\source\granny.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_animation.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_animation_binding.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_art_tool_info.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_basis_conversion.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_bink.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_bink0_compression.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_bink1_compression.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_bone_operations.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_bspline.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_bspline_buffers.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_bspline_solver.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_bspline_solver_core.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_bspline_solver_debugging.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_camera.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_compression_tools.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_compress_curve.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_control.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_controlled_animation.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_controlled_pose.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_crc.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_curve.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_dag.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_data_type_conversion.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_data_type_definition.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_data_type_io.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_deformers.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_degree_of_freedom.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_exporter_info.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_file.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_file_builder.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_file_compressor.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_file_format.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_file_info.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_file_operations.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_file_reader.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_file_writer.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_fixed_allocator.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_generic_deformers.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_ik.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_image_operations.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_intersection.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_local_pose.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_log.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_material.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_math.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_member_iterator.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_memory.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_memory_arena.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_memory_file_reader.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_memory_file_writer.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_mesh.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_mesh_binding.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_mesh_builder.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_mesh_deformer.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_model.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_model_control_binding.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_model_instance.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_oodle0_compression.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_oodle1_compression.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_periodic_loop.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_pixel_layout.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_platform_convert.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_pointer_hash.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_rt_common.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_s3tc.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_sieve.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_skeleton.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_skeleton_builder.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_stack_allocator.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_startup.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_statistics.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_stat_hud.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_string.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_string_formatting.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_string_table.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_tangent_frame.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_test_types.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_texture.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_texture_builder.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_thread_safety.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_track_group.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_track_group_builder.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_track_group_sampler.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_track_mask.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_track_sampler.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_transform.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_tri_topology.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_type_listing.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_units.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_variant_builder.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_version_checking.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_vertex_data.cpp" />
+    <ClCompile Include="Tools\granny\source\granny_world_pose.cpp" />
+    <ClCompile Include="Tools\granny\source\radarith.c" />
+    <ClCompile Include="Tools\granny\source\radlz.c" />
+    <ClCompile Include="Tools\granny\source\varbits.c" />
+    <ClCompile Include="Tools\granny\source\wavelet.c" />
+    <ClCompile Include="Tools\granny\source\win32_granny_assert.cpp" />
+    <ClCompile Include="Tools\granny\source\win32_granny_dll.cpp" />
+    <ClCompile Include="Tools\granny\source\win32_granny_file_operations.cpp" />
+    <ClCompile Include="Tools\granny\source\win32_granny_file_reader.cpp" />
+    <ClCompile Include="Tools\granny\source\win32_granny_file_writer.cpp" />
+    <ClCompile Include="Tools\granny\source\win32_granny_memory.cpp" />
+    <ClCompile Include="Tools\granny\source\win32_granny_msvc_stubs.cpp" />
+    <ClCompile Include="Tools\granny\source\win32_granny_startup.cpp" />
+    <ClCompile Include="Tools\granny\source\win32_granny_system_clock.cpp" />
+    <ClCompile Include="Tools\granny\source\win32_granny_windows.cpp" />
+    <ClCompile Include="Tools\granny\source\x86_granny_accelerated_deformers.cpp" />
+    <ClCompile Include="Tools\granny\source\x86_granny_bone_operations.cpp" />
+    <ClCompile Include="Tools\granny\source\x86_granny_cpu_queries.cpp" />
+    <ClCompile Include="Tools\ImageLib\cImage.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImageBMP.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImageGIF.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImageJPG.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImagePCX.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImagePNG.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImageTGA.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcapimin.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcapistd.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jccoefct.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jccolor.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcdctmgr.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jchuff.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcinit.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcmainct.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcmarker.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcmaster.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcomapi.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcparam.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcphuff.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcprepct.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcsample.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jctrans.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdapimin.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdapistd.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdatadst.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdatasrc.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdcoefct.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdcolor.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jddctmgr.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdhuff.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdinput.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdmainct.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdmarker.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdmaster.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdmerge.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdphuff.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdpostct.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdsample.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdtrans.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jerror.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jfdctflt.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jfdctfst.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jfdctint.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jidctflt.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jidctfst.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jidctint.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jidctred.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jmemmgr.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jmemnobs.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jquant1.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jquant2.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jutils.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\png.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngerror.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pnggccrd.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngget.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngmem.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngpread.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngread.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngrio.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngrtran.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngrutil.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngset.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngtrans.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngvcrd.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngwio.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngwrite.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngwtran.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngwutil.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\adler32.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\compress.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\crc32.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\deflate.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\gzio.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\infback.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\inffast.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\inflate.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\inftrees.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\trees.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\uncompr.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\zutil.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="directinput\directinput.h" />
+    <ClInclude Include="Rune\Collision\RuCollisionHierarchy_Base.h" />
+    <ClInclude Include="Rune\Collision\RuCollisionHierarchy_Quadtree.h" />
+    <ClInclude Include="Rune\Collision\RuCollisionHierarchy_Simple.h" />
+    <ClInclude Include="Rune\Collision\RuCollision_Base.h" />
+    <ClInclude Include="Rune\Collision\RuCollision_kdTree.h" />
+    <ClInclude Include="Rune\Collision\RuCollision_kdTree_16.h" />
+    <ClInclude Include="Rune\Collision\RuCollision_Simple.h" />
+    <ClInclude Include="Rune\Collision\RuType_Collision.h" />
+    <ClInclude Include="Rune\Components\NavMesh\RuNavMesh_Base.h" />
+    <ClInclude Include="Rune\Components\SpatialPartition\RuSpatialPartition_Base.h" />
+    <ClInclude Include="Rune\Core\Algorithm\RuAlgorithm_PatternMatch_FJS.h" />
+    <ClInclude Include="Rune\Core\Collection\RuCollections.h" />
+    <ClInclude Include="Rune\Core\Collection\RuCollectionsHash.h" />
+    <ClInclude Include="Rune\Core\Collection\RuCollectionsLRU.h" />
+    <ClInclude Include="Rune\Core\Collection\RuCollectionsTree.h" />
+    <ClInclude Include="Rune\Core\Collection\RuCollection_2DGrid.h" />
+    <ClInclude Include="Rune\Core\Collection\RuCollection_TernaryStringTree.h" />
+    <ClInclude Include="Rune\Core\Crypto\RuCrypto_MD5.h" />
+    <ClInclude Include="Rune\Core\DataStore\RuDataClient.h" />
+    <ClInclude Include="Rune\Core\DataStore\RuDataServer.h" />
+    <ClInclude Include="Rune\Core\DataStore\RuDataStore_Base.h" />
+    <ClInclude Include="Rune\Core\DataStore\RuDataStore_Disk.h" />
+    <ClInclude Include="Rune\Core\DataStore\RuDataStore_Patcher.h" />
+    <ClInclude Include="Rune\Core\Exception\RuExceptions.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_Base.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_Composite.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_fBm.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_HeteroTerrain.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_HybridMultifractal.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_Multifractal.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_PostFX_ABS.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_PostFX_Cutoff.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_PostFX_Gain.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_PostFX_Remap.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_PostFX_Square.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_RidgedMultifractal.h" />
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_Shapes.h" />
+    <ClInclude Include="Rune\Core\Math\RuMath.h" />
+    <ClInclude Include="Rune\Core\Math\RuMathBase.h" />
+    <ClInclude Include="Rune\Core\Math\RuMathCollision.h" />
+    <ClInclude Include="Rune\Core\Math\RuMathDistance.h" />
+    <ClInclude Include="Rune\Core\Math\RuMathGeometry.h" />
+    <ClInclude Include="Rune\Core\Math\RuMathSSE.h" />
+    <ClInclude Include="Rune\Core\Math\RuMathVector.h" />
+    <ClInclude Include="Rune\Core\Math\RuMath_Spline.h" />
+    <ClInclude Include="Rune\Core\Math\RuMath_UVTransform.h" />
+    <ClInclude Include="Rune\Core\Math\RuODESolver_RK4.h" />
+    <ClInclude Include="Rune\Core\Math\RuVectorMath.h" />
+    <ClInclude Include="Rune\Core\Memory\RuMalloc.h" />
+    <ClInclude Include="Rune\Core\Memory\RuMemoryAllocator.h" />
+    <ClInclude Include="Rune\Core\Memory\RuMemoryHeap.h" />
+    <ClInclude Include="Rune\Core\Memory\RuMemoryHeapFactory.h" />
+    <ClInclude Include="Rune\Core\Memory\RuMemoryManager.h" />
+    <ClInclude Include="Rune\Core\Memory\RuMemUtil.h" />
+    <ClInclude Include="Rune\Core\Noise\RuNoise_Base.h" />
+    <ClInclude Include="Rune\Core\Noise\RuNoise_Perlin.h" />
+    <ClInclude Include="Rune\Core\Noise\RuNoise_Texture.h" />
+    <ClInclude Include="Rune\Core\Noise\RuNoise_Value.h" />
+    <ClInclude Include="Rune\Core\Noise\RuNoise_Worley.h" />
+    <ClInclude Include="Rune\Core\Stream\RuArchiveIO.h" />
+    <ClInclude Include="Rune\Core\Stream\RuStreamIO.h" />
+    <ClInclude Include="Rune\Core\Thread\RuThread_Core.h" />
+    <ClInclude Include="Rune\Core\Thread\RuThread_CriticalSection.h" />
+    <ClInclude Include="Rune\Core\Thread\RuThread_SyncObject.h" />
+    <ClInclude Include="Rune\Core\Thread\RuThread_Worker.h" />
+    <ClInclude Include="Rune\Core\Thread\RuThread_WorkQueue.h" />
+    <ClInclude Include="Rune\Core\Type\RuType_Base.h" />
+    <ClInclude Include="Rune\Core\Type\RuType_BitField.h" />
+    <ClInclude Include="Rune\Core\Type\RuType_Event.h" />
+    <ClInclude Include="Rune\Core\Type\RuType_Object.h" />
+    <ClInclude Include="Rune\Core\Utility\RuUtility.h" />
+    <ClInclude Include="Rune\Core\Utility\RuUtility_FunctionScheduler.h" />
+    <ClInclude Include="Rune\Core\Utility\RuUtility_Profile.h" />
+    <ClInclude Include="Rune\Core\Utility\RuUtility_PropertyContainer.h" />
+    <ClInclude Include="Rune\Core\Utility\RuUtility_Stream.h" />
+    <ClInclude Include="Rune\Engine\Animation\RuAnimBase.h" />
+    <ClInclude Include="Rune\Engine\Animation\RuAnimTrack.h" />
+    <ClInclude Include="Rune\Engine\Base\RuCore.h" />
+    <ClInclude Include="Rune\Engine\Base\RuEngine_Base.h" />
+    <ClInclude Include="Rune\Engine\Base\RuEngine_DeviceBufferPool.h" />
+    <ClInclude Include="Rune\Engine\Base\RuEngine_Engine.h" />
+    <ClInclude Include="Rune\Engine\Base\RuEngine_EngineResourceArray.h" />
+    <ClInclude Include="Rune\Engine\Base\RuEngine_Settings.h" />
+    <ClInclude Include="Rune\Engine\Base\RuEngine_TexturePool.h" />
+    <ClInclude Include="Rune\Engine\Base\RuMaterialBase.h" />
+    <ClInclude Include="Rune\Engine\Base\RuShaderBase.h" />
+    <ClInclude Include="Rune\Engine\Base\RuShader_Composite.h" />
+    <ClInclude Include="Rune\Engine\Collision\RuCollisionStructure_PackedGrid.h" />
+    <ClInclude Include="Rune\Engine\Geometry\RuMeshBase.h" />
+    <ClInclude Include="Rune\Engine\Geometry\RuMeshCollision.h" />
+    <ClInclude Include="Rune\Engine\Geometry\RuMesh_SkinTools.h" />
+    <ClInclude Include="Rune\Engine\Geometry\RuPolySoup.h" />
+    <ClInclude Include="Rune\Engine\Geometry\RuPrimitiveToolkit.h" />
+    <ClInclude Include="Rune\Engine\Instantiator\RuMeshInstantiators_Common.h" />
+    <ClInclude Include="Rune\Engine\Instantiator\RuMeshInstantiator_Base.h" />
+    <ClInclude Include="Rune\Engine\Manager\RuEngine_InstanceManager.h" />
+    <ClInclude Include="Rune\Engine\Manager\RuEngine_InstanceManager_Base.h" />
+    <ClInclude Include="Rune\Engine\Manager\RuEngine_ResourceManager.h" />
+    <ClInclude Include="Rune\Engine\Manager\RuEngine_ResourceManager_Base.h" />
+    <ClInclude Include="Rune\Engine\Manager\RuEngine_ShaderManager.h" />
+    <ClInclude Include="Rune\Engine\RuCamera.h" />
+    <ClInclude Include="Rune\Engine\Texture\RuTextureAtlas_Aggregate.h" />
+    <ClInclude Include="Rune\Engine\Texture\RuTextureAtlas_Base.h" />
+    <ClInclude Include="Rune\Engine\Texture\RuTextureAtlas_Paged.h" />
+    <ClInclude Include="Rune\Engine\Texture\RuTextureGenerator.h" />
+    <ClInclude Include="Rune\Engine\Texture\RuTextureUtility.h" />
+    <ClInclude Include="Rune\Engine\Texture\RuTexture_Proxy.h" />
+    <ClInclude Include="Rune\Engine\Type\RuType_Core.h" />
+    <ClInclude Include="Rune\Engine\Type\RuType_Flags.h" />
+    <ClInclude Include="rune\engine\type\RuType_FX.h" />
+    <ClInclude Include="Rune\Engine\Type\RuType_Vertex.h" />
+    <ClInclude Include="Rune\ExtLink\RuExtLink_Granny.h" />
+    <ClInclude Include="Rune\Fusion\RuFusion_Actor.h" />
+    <ClInclude Include="Rune\Fusion\RuFusion_Mime.h" />
+    <ClInclude Include="Rune\Fusion\RuFusion_Minimap.h" />
+    <ClInclude Include="Rune\Fusion\RuFusion_Sojourner.h" />
+    <ClInclude Include="Rune\Fusion\RuFusion_Trekker.h" />
+    <ClInclude Include="Rune\Fusion\RuFusion_Trekker_Interface.h" />
+    <ClInclude Include="Rune\Fusion\RuFusion_UIElement.h" />
+    <ClInclude Include="Rune\Helper\RuHelper_Entity.h" />
+    <ClInclude Include="Rune\Helper\RuHelper_GR2.h" />
+    <ClInclude Include="Rune\Helper\RuHelper_IRuEntity_Renderable.h" />
+    <ClInclude Include="Rune\Helper\RuHelper_IRuMaterial.h" />
+    <ClInclude Include="Rune\Helper\RuHelper_Math.h" />
+    <ClInclude Include="Rune\Helper\RuHelper_StreamIO.h" />
+    <ClInclude Include="Rune\ImageFX\RuImageFX_Blitter.h" />
+    <ClInclude Include="Rune\ImageFX\RuImageFX_Resample.h" />
+    <ClInclude Include="Rune\Mojo\RuMojo_Base.h" />
+    <ClInclude Include="Rune\Mojo\RuMojo_Helper.h" />
+    <ClInclude Include="Rune\NvTriStrip\NvTriStrip.h" />
+    <ClInclude Include="Rune\NvTriStrip\NvTriStripObjects.h" />
+    <ClInclude Include="Rune\NvTriStrip\VertexCache.h" />
+    <ClInclude Include="Rune\Partition\RuPartition_QuadTree.h" />
+    <ClInclude Include="Rune\PathEngine\RuPathEngine_Base.h" />
+    <ClInclude Include="Rune\PathEngine\RuPathEngine_NodeBuilder.h" />
+    <ClInclude Include="Rune\PathEngine\RuPathFinder_AStar.h" />
+    <ClInclude Include="Rune\PathEngine\RuPathFinder_Base.h" />
+    <ClInclude Include="Rune\PathEngine\RuPathGraph_AStar.h" />
+    <ClInclude Include="Rune\PathEngine\RuPathGraph_Base.h" />
+    <ClInclude Include="Rune\PathEngine\RuPathHierarchy_Base.h" />
+    <ClInclude Include="Rune\PathEngine\RuPathHierarchy_DS.h" />
+    <ClInclude Include="Rune\PathEngine\RuPathRover_Base.h" />
+    <ClInclude Include="Rune\PathEngine\RuPathRover_Simple.h" />
+    <ClInclude Include="Rune\Process\RuProcess_ConsoleChild.h" />
+    <ClInclude Include="Rune\Renderer\Cache\RuSkinCache.h" />
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_AlphaZ.h" />
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_AquaFX.h" />
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_BlendFX.h" />
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_DistortFX.h" />
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_GlowFX.h" />
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_RTLightMap.h" />
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_SubmergeFX.h" />
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_VizCon.h" />
+    <ClInclude Include="Rune\Renderer\RendererNode\RuRendererNode_RenderContext.h" />
+    <ClInclude Include="Rune\Renderer\RendererNode\RuRendererNode_SetScissor.h" />
+    <ClInclude Include="Rune\Renderer\RendererNode\RuRendererNode_TextureCopy.h" />
+    <ClInclude Include="Rune\Renderer\RendererNode\RuRendererNode_UI.h" />
+    <ClInclude Include="Rune\Renderer\RendererNode\RuRendererNode_ViewportClear.h" />
+    <ClInclude Include="Rune\Renderer\RuRenderer.h" />
+    <ClInclude Include="Rune\Renderer\Type\RuRenderer_Type.h" />
+    <ClInclude Include="Rune\Rune.h" />
+    <ClInclude Include="Rune\Scene\Base\RuEntityACT.h" />
+    <ClInclude Include="Rune\Scene\Base\RuEntityBase.h" />
+    <ClInclude Include="Rune\Scene\Base\RuEntityContainer.h" />
+    <ClInclude Include="Rune\Scene\Base\RuEntityController.h" />
+    <ClInclude Include="Rune\Scene\Base\RuEntityModel.h" />
+    <ClInclude Include="Rune\Scene\Base\RuEntity_Camera.h" />
+    <ClInclude Include="Rune\Scene\Base\RuHierarchyCoupler.h" />
+    <ClInclude Include="Rune\Scene\Base\RuHierarchy_GR2.h" />
+    <ClInclude Include="Rune\Scene\ColVis\RuEntity_ColVis.h" />
+    <ClInclude Include="Rune\Scene\Container\RuContainer_Collision.h" />
+    <ClInclude Include="Rune\Scene\Container\RuContainer_Portal.h" />
+    <ClInclude Include="Rune\Scene\Container\RuEntityAABBTree.h" />
+    <ClInclude Include="Rune\Scene\Container\RuEntity_Container_Quadtree.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_AnimCompensator.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Bone.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Camera.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Decal.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_DistanceFader.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Entity.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_EventTrigger.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Frame.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_GhostTrail.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_GlobalAlpha.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_GlobalColor.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Hierarchy.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Highlighter.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_MaterialTexture.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Morph.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Motion.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Orientation.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_ParticleSystem.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Particle_Emitter.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Particle_Emitter_Enviro.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Particle_Emitter_Line.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Particle_Visualizer_Entity.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_Particle_Visualizer_Sprite.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_PolyLine.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_UVFX.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_VisibilityChain.h" />
+    <ClInclude Include="Rune\Scene\Controller\RuController_WaterFX.h" />
+    <ClInclude Include="Rune\Scene\FX2D\RuFX2D_Model.h" />
+    <ClInclude Include="Rune\Scene\FX2D\RuFX2D_UIFX.h" />
+    <ClInclude Include="Rune\Scene\FX\RuEntity_CollectorFX.h" />
+    <ClInclude Include="Rune\Scene\FX\RuEntity_Decal.h" />
+    <ClInclude Include="Rune\Scene\FX\RuEntity_DecalShadow.h" />
+    <ClInclude Include="Rune\Scene\FX\RuEntity_GhostTrail.h" />
+    <ClInclude Include="Rune\Scene\FX\RuEntity_PolyLine.h" />
+    <ClInclude Include="Rune\Scene\Gizmo\RuGizmo_Base.h" />
+    <ClInclude Include="Rune\Scene\Gizmo\RuGizmo_Box.h" />
+    <ClInclude Include="Rune\Scene\Gizmo\RuGizmo_Mover.h" />
+    <ClInclude Include="Rune\Scene\Gizmo\RuGizmo_Plane.h" />
+    <ClInclude Include="Rune\Scene\Occlusion\RuEntity_AntiPortal.h" />
+    <ClInclude Include="Rune\Scene\Paperdoll\RuEntityCompositeModel.h" />
+    <ClInclude Include="Rune\Scene\Paperdoll\RuEntityPaperdoll.h" />
+    <ClInclude Include="Rune\Scene\Paperdoll\RuPaperdollCache.h" />
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Base.h" />
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Doodad.h" />
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Emitter.h" />
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Emitter_Enviro.h" />
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Emitter_Line.h" />
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Sprite.h" />
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Visualizer_Entity.h" />
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Visualizer_Sprite.h" />
+    <ClInclude Include="Rune\Scene\PathEngineVis\RuEntity_PathEngineVis.h" />
+    <ClInclude Include="Rune\Scene\PathEngineVis\RuEntity_PathGraphVis.h" />
+    <ClInclude Include="Rune\Scene\Proxy\RuEntity_Proxy.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuEntityOptimalTerrain.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuEntitySkyDome.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuEntityTerrain.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuEntityTerrain_Common.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuEntity_Environment.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_Backdrop.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_Base.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_CloudPlane.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_DoodadSystem.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_EntitySystem.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_TriggerSystem.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_Water.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_WaterBodyDescriptor.h" />
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_ZoneDescriptorContainer.h" />
+    <ClInclude Include="Rune\Scene\TileMap\RuEntity_TileMap.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntityGizmo.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_AABB.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_BoneVis.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_ClipRect.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Flag.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_FrustumVis.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Grid.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Label.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Line.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Sphere.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Tetrahedron.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Text.h" />
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_TileGrid.h" />
+    <ClInclude Include="Rune\SQL\RuSQL_Base.h" />
+    <ClInclude Include="Rune\UI\RuUI_Font.h" />
+    <ClInclude Include="texture\textureimage.h" />
+    <ClInclude Include="Tools\dxtLib\dxtutility.h" />
+    <ClInclude Include="Tools\FilePackage\cFileObj.h" />
+    <ClInclude Include="Tools\FilePackage\cFilePackage.h" />
+    <ClInclude Include="Tools\FilePackage\cImgFile.h" />
+    <ClInclude Include="Tools\FilePackage\compressFile.h" />
+    <ClInclude Include="Tools\filepackage\cTSTDictionary.hpp" />
+    <ClInclude Include="Tools\filepackage\FileHashTable.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\config\ftheader.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\config\ftoption.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\freetype.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftadvanc.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftbbox.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftbdf.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftbitmap.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftcache.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftchapters.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftcid.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\fterrdef.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\fterrors.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftgasp.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftglyph.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftgxval.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftgzip.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftimage.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftincrem.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftlcdfil.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftlist.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftlzw.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftmac.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftmm.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftmodapi.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftmoderr.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftotval.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftoutln.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftpfr.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftrender.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftsizes.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftsnames.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftstroke.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftsynth.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftsystem.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\fttrigon.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\fttypes.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftwinfnt.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ftxf86.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\autohint.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftcalc.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftdebug.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftdriver.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftgloadr.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftmemory.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftobjs.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftrfork.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftserv.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftstream.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\fttrace.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftvalid.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\internal.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\pcftypes.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\psaux.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\pshints.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svbdf.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svcid.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svgldict.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svgxval.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svkern.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svmm.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svotval.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svpfr.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svpostnm.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svpscmap.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svpsinfo.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svsfnt.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svttcmap.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svtteng.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svttglyf.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svwinfnt.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svxf86nm.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\sfnt.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\t1types.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\internal\tttypes.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\t1tables.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ttnameid.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\tttables.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\tttags.h" />
+    <ClInclude Include="Tools\freetype\include\freetype\ttunpat.h" />
+    <ClInclude Include="Tools\freetype\include\ft2build.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\afangles.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\afcjk.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\afdummy.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\aferrors.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\afglobal.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\afhints.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\afindic.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\aflatin.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\afloader.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\afmodule.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\aftypes.h" />
+    <ClInclude Include="Tools\freetype\src\autofit\afwarp.h" />
+    <ClInclude Include="Tools\freetype\src\base\ftbase.h" />
+    <ClInclude Include="Tools\freetype\src\bdf\bdf.h" />
+    <ClInclude Include="Tools\freetype\src\bdf\bdfdrivr.h" />
+    <ClInclude Include="Tools\freetype\src\bdf\bdferror.h" />
+    <ClInclude Include="Tools\freetype\src\cache\ftccache.h" />
+    <ClInclude Include="Tools\freetype\src\cache\ftccback.h" />
+    <ClInclude Include="Tools\freetype\src\cache\ftcerror.h" />
+    <ClInclude Include="Tools\freetype\src\cache\ftcglyph.h" />
+    <ClInclude Include="Tools\freetype\src\cache\ftcimage.h" />
+    <ClInclude Include="Tools\freetype\src\cache\ftcmanag.h" />
+    <ClInclude Include="Tools\freetype\src\cache\ftcmru.h" />
+    <ClInclude Include="Tools\freetype\src\cache\ftcsbits.h" />
+    <ClInclude Include="Tools\freetype\src\cff\cffcmap.h" />
+    <ClInclude Include="Tools\freetype\src\cff\cffdrivr.h" />
+    <ClInclude Include="Tools\freetype\src\cff\cfferrs.h" />
+    <ClInclude Include="Tools\freetype\src\cff\cffgload.h" />
+    <ClInclude Include="Tools\freetype\src\cff\cffload.h" />
+    <ClInclude Include="Tools\freetype\src\cff\cffobjs.h" />
+    <ClInclude Include="Tools\freetype\src\cff\cffparse.h" />
+    <ClInclude Include="Tools\freetype\src\cff\cfftoken.h" />
+    <ClInclude Include="Tools\freetype\src\cff\cfftypes.h" />
+    <ClInclude Include="Tools\freetype\src\cid\ciderrs.h" />
+    <ClInclude Include="Tools\freetype\src\cid\cidgload.h" />
+    <ClInclude Include="Tools\freetype\src\cid\cidload.h" />
+    <ClInclude Include="Tools\freetype\src\cid\cidobjs.h" />
+    <ClInclude Include="Tools\freetype\src\cid\cidparse.h" />
+    <ClInclude Include="Tools\freetype\src\cid\cidriver.h" />
+    <ClInclude Include="Tools\freetype\src\cid\cidtoken.h" />
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvalid.h" />
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvcommn.h" />
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxverror.h" />
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvfeat.h" />
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvmod.h" />
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvmort.h" />
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvmorx.h" />
+    <ClInclude Include="Tools\freetype\src\lzw\ftzopen.h" />
+    <ClInclude Include="Tools\freetype\src\otvalid\otvalid.h" />
+    <ClInclude Include="Tools\freetype\src\otvalid\otvcommn.h" />
+    <ClInclude Include="Tools\freetype\src\otvalid\otverror.h" />
+    <ClInclude Include="Tools\freetype\src\otvalid\otvgpos.h" />
+    <ClInclude Include="Tools\freetype\src\otvalid\otvmod.h" />
+    <ClInclude Include="Tools\freetype\src\pfr\pfrcmap.h" />
+    <ClInclude Include="Tools\freetype\src\pfr\pfrdrivr.h" />
+    <ClInclude Include="Tools\freetype\src\pfr\pfrerror.h" />
+    <ClInclude Include="Tools\freetype\src\pfr\pfrgload.h" />
+    <ClInclude Include="Tools\freetype\src\pfr\pfrload.h" />
+    <ClInclude Include="Tools\freetype\src\pfr\pfrobjs.h" />
+    <ClInclude Include="Tools\freetype\src\pfr\pfrsbit.h" />
+    <ClInclude Include="Tools\freetype\src\pfr\pfrtypes.h" />
+    <ClInclude Include="Tools\freetype\src\psaux\afmparse.h" />
+    <ClInclude Include="Tools\freetype\src\psaux\psauxerr.h" />
+    <ClInclude Include="Tools\freetype\src\psaux\psauxmod.h" />
+    <ClInclude Include="Tools\freetype\src\psaux\psconv.h" />
+    <ClInclude Include="Tools\freetype\src\psaux\psobjs.h" />
+    <ClInclude Include="Tools\freetype\src\psaux\t1cmap.h" />
+    <ClInclude Include="Tools\freetype\src\psaux\t1decode.h" />
+    <ClInclude Include="Tools\freetype\src\pshinter\pshalgo.h" />
+    <ClInclude Include="Tools\freetype\src\pshinter\pshglob.h" />
+    <ClInclude Include="Tools\freetype\src\pshinter\pshmod.h" />
+    <ClInclude Include="Tools\freetype\src\pshinter\pshnterr.h" />
+    <ClInclude Include="Tools\freetype\src\pshinter\pshrec.h" />
+    <ClInclude Include="Tools\freetype\src\psnames\psmodule.h" />
+    <ClInclude Include="Tools\freetype\src\psnames\psnamerr.h" />
+    <ClInclude Include="Tools\freetype\src\psnames\pstables.h" />
+    <ClInclude Include="Tools\freetype\src\raster\ftmisc.h" />
+    <ClInclude Include="Tools\freetype\src\raster\ftraster.h" />
+    <ClInclude Include="Tools\freetype\src\raster\ftrend1.h" />
+    <ClInclude Include="Tools\freetype\src\raster\rasterrs.h" />
+    <ClInclude Include="Tools\freetype\src\sfnt\sfdriver.h" />
+    <ClInclude Include="Tools\freetype\src\sfnt\sferrors.h" />
+    <ClInclude Include="Tools\freetype\src\sfnt\sfobjs.h" />
+    <ClInclude Include="Tools\freetype\src\sfnt\ttbdf.h" />
+    <ClInclude Include="Tools\freetype\src\sfnt\ttcmap.h" />
+    <ClInclude Include="Tools\freetype\src\sfnt\ttkern.h" />
+    <ClInclude Include="Tools\freetype\src\sfnt\ttload.h" />
+    <ClInclude Include="Tools\freetype\src\sfnt\ttmtx.h" />
+    <ClInclude Include="Tools\freetype\src\sfnt\ttpost.h" />
+    <ClInclude Include="Tools\freetype\src\sfnt\ttsbit.h" />
+    <ClInclude Include="Tools\freetype\src\smooth\ftgrays.h" />
+    <ClInclude Include="Tools\freetype\src\smooth\ftsmerrs.h" />
+    <ClInclude Include="Tools\freetype\src\smooth\ftsmooth.h" />
+    <ClInclude Include="Tools\freetype\src\truetype\ttdriver.h" />
+    <ClInclude Include="Tools\freetype\src\truetype\tterrors.h" />
+    <ClInclude Include="Tools\freetype\src\truetype\ttgload.h" />
+    <ClInclude Include="Tools\freetype\src\truetype\ttgxvar.h" />
+    <ClInclude Include="Tools\freetype\src\truetype\ttinterp.h" />
+    <ClInclude Include="Tools\freetype\src\truetype\ttobjs.h" />
+    <ClInclude Include="Tools\freetype\src\truetype\ttpload.h" />
+    <ClInclude Include="Tools\freetype\src\type1\t1afm.h" />
+    <ClInclude Include="Tools\freetype\src\type1\t1driver.h" />
+    <ClInclude Include="Tools\freetype\src\type1\t1errors.h" />
+    <ClInclude Include="Tools\freetype\src\type1\t1gload.h" />
+    <ClInclude Include="Tools\freetype\src\type1\t1load.h" />
+    <ClInclude Include="Tools\freetype\src\type1\t1objs.h" />
+    <ClInclude Include="Tools\freetype\src\type1\t1parse.h" />
+    <ClInclude Include="Tools\freetype\src\type1\t1tokens.h" />
+    <ClInclude Include="Tools\freetype\src\type42\t42drivr.h" />
+    <ClInclude Include="Tools\freetype\src\type42\t42error.h" />
+    <ClInclude Include="Tools\freetype\src\type42\t42objs.h" />
+    <ClInclude Include="Tools\freetype\src\type42\t42parse.h" />
+    <ClInclude Include="Tools\freetype\src\type42\t42types.h" />
+    <ClInclude Include="Tools\freetype\src\winfonts\fnterrs.h" />
+    <ClInclude Include="Tools\freetype\src\winfonts\winfnt.h" />
+    <ClInclude Include="Tools\granny\include\granny.h" />
+    <ClInclude Include="Tools\granny\include\grn2gr2.h" />
+    <ClInclude Include="Tools\granny\source\arithbit.h" />
+    <ClInclude Include="Tools\granny\source\binktc.h" />
+    <ClInclude Include="Tools\granny\source\encode.h" />
+    <ClInclude Include="Tools\granny\source\granny.h" />
+    <ClInclude Include="Tools\granny\source\granny_accelerated_deformers.h" />
+    <ClInclude Include="Tools\granny\source\granny_animation.h" />
+    <ClInclude Include="Tools\granny\source\granny_animation_binding.h" />
+    <ClInclude Include="Tools\granny\source\granny_art_tool_info.h" />
+    <ClInclude Include="Tools\granny\source\granny_assert.h" />
+    <ClInclude Include="Tools\granny\source\granny_basis_conversion.h" />
+    <ClInclude Include="Tools\granny\source\granny_bink.h" />
+    <ClInclude Include="Tools\granny\source\granny_bink0_compression.h" />
+    <ClInclude Include="Tools\granny\source\granny_bink1_compression.h" />
+    <ClInclude Include="Tools\granny\source\granny_bone_operations.h" />
+    <ClInclude Include="Tools\granny\source\granny_bspline.h" />
+    <ClInclude Include="Tools\granny\source\granny_bspline_buffers.h" />
+    <ClInclude Include="Tools\granny\source\granny_bspline_inlines.h" />
+    <ClInclude Include="Tools\granny\source\granny_bspline_solver.h" />
+    <ClInclude Include="Tools\granny\source\granny_bspline_solver_core.h" />
+    <ClInclude Include="Tools\granny\source\granny_bspline_solver_debugging.h" />
+    <ClInclude Include="Tools\granny\source\granny_camera.h" />
+    <ClInclude Include="Tools\granny\source\granny_compiler.h" />
+    <ClInclude Include="Tools\granny\source\granny_compression_tools.h" />
+    <ClInclude Include="Tools\granny\source\granny_compress_curve.h" />
+    <ClInclude Include="Tools\granny\source\granny_control.h" />
+    <ClInclude Include="Tools\granny\source\granny_controlled_animation.h" />
+    <ClInclude Include="Tools\granny\source\granny_controlled_pose.h" />
+    <ClInclude Include="Tools\granny\source\granny_conversions.h" />
+    <ClInclude Include="Tools\granny\source\granny_cpp_settings.h" />
+    <ClInclude Include="Tools\granny\source\granny_crc.h" />
+    <ClInclude Include="Tools\granny\source\granny_curve.h" />
+    <ClInclude Include="Tools\granny\source\granny_c_argument_list.h" />
+    <ClInclude Include="Tools\granny\source\granny_dag.h" />
+    <ClInclude Include="Tools\granny\source\granny_data_type_conversion.h" />
+    <ClInclude Include="Tools\granny\source\granny_data_type_definition.h" />
+    <ClInclude Include="Tools\granny\source\granny_data_type_io.h" />
+    <ClInclude Include="Tools\granny\source\granny_deformers.h" />
+    <ClInclude Include="Tools\granny\source\granny_degree_of_freedom.h" />
+    <ClInclude Include="Tools\granny\source\granny_exporter_info.h" />
+    <ClInclude Include="Tools\granny\source\granny_file.h" />
+    <ClInclude Include="Tools\granny\source\granny_file_builder.h" />
+    <ClInclude Include="Tools\granny\source\granny_file_compressor.h" />
+    <ClInclude Include="Tools\granny\source\granny_file_format.h" />
+    <ClInclude Include="Tools\granny\source\granny_file_info.h" />
+    <ClInclude Include="Tools\granny\source\granny_file_operations.h" />
+    <ClInclude Include="Tools\granny\source\granny_file_reader.h" />
+    <ClInclude Include="Tools\granny\source\granny_file_writer.h" />
+    <ClInclude Include="Tools\granny\source\granny_fixed_allocator.h" />
+    <ClInclude Include="Tools\granny\source\granny_floats.h" />
+    <ClInclude Include="Tools\granny\source\granny_generic_deformers.h" />
+    <ClInclude Include="Tools\granny\source\granny_ik.h" />
+    <ClInclude Include="Tools\granny\source\granny_image_operations.h" />
+    <ClInclude Include="Tools\granny\source\granny_intersection.h" />
+    <ClInclude Include="Tools\granny\source\granny_intrinsics.h" />
+    <ClInclude Include="Tools\granny\source\granny_limits.h" />
+    <ClInclude Include="Tools\granny\source\granny_local_pose.h" />
+    <ClInclude Include="Tools\granny\source\granny_log.h" />
+    <ClInclude Include="Tools\granny\source\granny_material.h" />
+    <ClInclude Include="Tools\granny\source\granny_math.h" />
+    <ClInclude Include="Tools\granny\source\granny_math_inlines.h" />
+    <ClInclude Include="Tools\granny\source\granny_member_iterator.h" />
+    <ClInclude Include="Tools\granny\source\granny_memory.h" />
+    <ClInclude Include="Tools\granny\source\granny_memory_arena.h" />
+    <ClInclude Include="Tools\granny\source\granny_memory_file_reader.h" />
+    <ClInclude Include="Tools\granny\source\granny_memory_file_writer.h" />
+    <ClInclude Include="Tools\granny\source\granny_mesh.h" />
+    <ClInclude Include="Tools\granny\source\granny_mesh_binding.h" />
+    <ClInclude Include="Tools\granny\source\granny_mesh_builder.h" />
+    <ClInclude Include="Tools\granny\source\granny_mesh_deformer.h" />
+    <ClInclude Include="Tools\granny\source\granny_model.h" />
+    <ClInclude Include="Tools\granny\source\granny_model_control_binding.h" />
+    <ClInclude Include="Tools\granny\source\granny_model_instance.h" />
+    <ClInclude Include="Tools\granny\source\granny_namespace.h" />
+    <ClInclude Include="Tools\granny\source\granny_oodle0_compression.h" />
+    <ClInclude Include="Tools\granny\source\granny_oodle1_compression.h" />
+    <ClInclude Include="Tools\granny\source\granny_parameter_checking.h" />
+    <ClInclude Include="Tools\granny\source\granny_periodic_loop.h" />
+    <ClInclude Include="Tools\granny\source\granny_pixel_layout.h" />
+    <ClInclude Include="Tools\granny\source\granny_platform.h" />
+    <ClInclude Include="Tools\granny\source\granny_platform_convert.h" />
+    <ClInclude Include="Tools\granny\source\granny_pointer_hash.h" />
+    <ClInclude Include="Tools\granny\source\granny_prefetch.h" />
+    <ClInclude Include="Tools\granny\source\granny_processor.h" />
+    <ClInclude Include="Tools\granny\source\granny_s3tc.h" />
+    <ClInclude Include="Tools\granny\source\granny_sieve.h" />
+    <ClInclude Include="Tools\granny\source\granny_skeleton.h" />
+    <ClInclude Include="Tools\granny\source\granny_skeleton_builder.h" />
+    <ClInclude Include="Tools\granny\source\granny_stack_allocator.h" />
+    <ClInclude Include="Tools\granny\source\granny_startup.h" />
+    <ClInclude Include="Tools\granny\source\granny_statistics.h" />
+    <ClInclude Include="Tools\granny\source\granny_stat_hud.h" />
+    <ClInclude Include="Tools\granny\source\granny_string.h" />
+    <ClInclude Include="Tools\granny\source\granny_string_formatting.h" />
+    <ClInclude Include="Tools\granny\source\granny_string_table.h" />
+    <ClInclude Include="Tools\granny\source\granny_system_clock.h" />
+    <ClInclude Include="Tools\granny\source\granny_tangent_frame.h" />
+    <ClInclude Include="Tools\granny\source\granny_test_types.h" />
+    <ClInclude Include="Tools\granny\source\granny_texture.h" />
+    <ClInclude Include="Tools\granny\source\granny_texture_builder.h" />
+    <ClInclude Include="Tools\granny\source\granny_thread_safety.h" />
+    <ClInclude Include="Tools\granny\source\granny_track_group.h" />
+    <ClInclude Include="Tools\granny\source\granny_track_group_builder.h" />
+    <ClInclude Include="Tools\granny\source\granny_track_group_sampler.h" />
+    <ClInclude Include="Tools\granny\source\granny_track_mask.h" />
+    <ClInclude Include="Tools\granny\source\granny_track_sampler.h" />
+    <ClInclude Include="Tools\granny\source\granny_transform.h" />
+    <ClInclude Include="Tools\granny\source\granny_tri_topology.h" />
+    <ClInclude Include="Tools\granny\source\granny_types.h" />
+    <ClInclude Include="Tools\granny\source\granny_type_listing.h" />
+    <ClInclude Include="Tools\granny\source\granny_units.h" />
+    <ClInclude Include="Tools\granny\source\granny_variant_builder.h" />
+    <ClInclude Include="Tools\granny\source\granny_version.h" />
+    <ClInclude Include="Tools\granny\source\granny_version_checking.h" />
+    <ClInclude Include="Tools\granny\source\granny_vertex_data.h" />
+    <ClInclude Include="Tools\granny\source\granny_winged_edge.h" />
+    <ClInclude Include="Tools\granny\source\granny_world_pose.h" />
+    <ClInclude Include="Tools\granny\source\header_postfix.h" />
+    <ClInclude Include="Tools\granny\source\header_preamble.h" />
+    <ClInclude Include="Tools\granny\source\radarith.h" />
+    <ClInclude Include="Tools\granny\source\radbase.h" />
+    <ClInclude Include="Tools\granny\source\raddebug.h" />
+    <ClInclude Include="Tools\granny\source\radlz.h" />
+    <ClInclude Include="Tools\granny\source\radmath.h" />
+    <ClInclude Include="Tools\granny\source\radmem.h" />
+    <ClInclude Include="Tools\granny\source\radmemutils.h" />
+    <ClInclude Include="Tools\granny\source\varbits.h" />
+    <ClInclude Include="Tools\granny\source\wavelet.h" />
+    <ClInclude Include="Tools\granny\source\win32_granny_dll.h" />
+    <ClInclude Include="Tools\granny\source\win32_granny_windows.h" />
+    <ClInclude Include="Tools\granny\source\x86_granny_cpu_queries.h" />
+    <ClInclude Include="Tools\ImageLib\cImage.h" />
+    <ClInclude Include="Tools\ImageLib\cImageBMP.h" />
+    <ClInclude Include="Tools\ImageLib\cImageGIF.h" />
+    <ClInclude Include="Tools\ImageLib\cImageJPG.h" />
+    <ClInclude Include="Tools\ImageLib\cImagePCX.h" />
+    <ClInclude Include="Tools\ImageLib\cImagePNG.h" />
+    <ClInclude Include="Tools\ImageLib\cImageTGA.h" />
+    <ClInclude Include="Tools\ImageLib\imagedef.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jchuff.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jconfig.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jdct.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jdhuff.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jerror.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jinclude.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jmemsys.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jmorecfg.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jpegint.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jpeglib.h" />
+    <ClInclude Include="Tools\ImageLib\jpeg\jversion.h" />
+    <ClInclude Include="Tools\ImageLib\png\png.h" />
+    <ClInclude Include="Tools\ImageLib\png\pngasmrd.h" />
+    <ClInclude Include="Tools\ImageLib\png\pngconf.h" />
+    <ClInclude Include="Tools\lzo\lzo1.h" />
+    <ClInclude Include="Tools\lzo\lzo1a.h" />
+    <ClInclude Include="Tools\lzo\lzo1b.h" />
+    <ClInclude Include="Tools\lzo\lzo1c.h" />
+    <ClInclude Include="Tools\lzo\lzo1f.h" />
+    <ClInclude Include="Tools\lzo\lzo1x.h" />
+    <ClInclude Include="Tools\lzo\lzo1y.h" />
+    <ClInclude Include="Tools\lzo\lzo1z.h" />
+    <ClInclude Include="Tools\lzo\lzo2a.h" />
+    <ClInclude Include="Tools\lzo\lzoconf.h" />
+    <ClInclude Include="Tools\lzo\lzodefs.h" />
+    <ClInclude Include="Tools\lzo\lzoutil.h" />
+    <ClInclude Include="Tools\lzo\lzo_asm.h" />
+    <ClInclude Include="Tools\zLib\crc32.h" />
+    <ClInclude Include="Tools\zLib\deflate.h" />
+    <ClInclude Include="Tools\zLib\inffast.h" />
+    <ClInclude Include="Tools\zLib\inffixed.h" />
+    <ClInclude Include="Tools\zLib\inflate.h" />
+    <ClInclude Include="Tools\zLib\inftrees.h" />
+    <ClInclude Include="Tools\zLib\trees.h" />
+    <ClInclude Include="Tools\zLib\zconf.h" />
+    <ClInclude Include="Tools\zLib\zconf.in.h" />
+    <ClInclude Include="Tools\zLib\zlib.h" />
+    <ClInclude Include="Tools\zLib\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Tools\granny\lib\granny2.lib" />
+    <Library Include="Tools\granny\lib\grn2gr2.lib" />
+    <Library Include="Tools\lzo\lzo2.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tools\granny\bin\gr2_viewer.exe" />
+    <None Include="Tools\granny\bin\granny2.dll" />
+    <None Include="Tools\granny\bin\granny_inspector2.dll" />
+    <None Include="Tools\granny\bin\grn.exe" />
+    <None Include="Tools\granny\bin\grn2gr2.dll" />
+    <None Include="Tools\granny\bin\inspector_tray.exe" />
+    <None Include="Tools\granny\source\contain.inl" />
+    <None Include="Tools\granny\source\granny_contain.inl" />
+    <None Include="Tools\granny\source\granny_generic_deformers.inl" />
+    <None Include="Tools\granny\source\granny_generic_deformer_wrapper.inl" />
+    <None Include="Tools\granny\source\granny_stat_hud_container.inl" />
+    <None Include="Tools\granny\source\radarith_exact.inl" />
+    <None Include="Tools\granny\source\treedisp.inl" />
+    <None Include="Tools\granny\source\x86_granny_accelerated_deformers_custom.inl" />
+    <None Include="Tools\granny\source\x86_granny_accelerated_deformers_generated.inl" />
+    <None Include="Tools\granny\source\x86_granny_accelerated_deformer_wrapper.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Rune">
+      <UniqueIdentifier>{75973623-08b3-4502-b377-20bdf7f3fee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Helper">
+      <UniqueIdentifier>{e7837a9c-9729-42e0-98dd-7b094f373fee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Rune\Helper\RuHelper_EventManager.cpp">
+      <Filter>Rune\Helper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rune\Helper\RuHelper_EventManager.h">
+      <Filter>Rune\Helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

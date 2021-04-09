@@ -1,0 +1,4148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Rune Integration">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Rune">
+      <UniqueIdentifier>{46560bb0-af3a-4f1e-81ba-c8595b6dd17e}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Rune\Collision">
+      <UniqueIdentifier>{0563eaca-c7ab-4559-ad55-60c62e14c12e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core">
+      <UniqueIdentifier>{ec98855a-a424-44af-b047-ebc005bfd1ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Collection">
+      <UniqueIdentifier>{aaabb5cc-7442-4f67-b6bc-8f2db14e7671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Exception">
+      <UniqueIdentifier>{b3de7c27-2826-4ff2-aeeb-a45f225acadc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Math">
+      <UniqueIdentifier>{d39df0d3-2270-4bde-9fb7-6a042fa0eca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Memory">
+      <UniqueIdentifier>{905b1fd4-9f9c-4457-bda0-2ee51fea7635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Stream">
+      <UniqueIdentifier>{c00e112d-497e-418c-87ff-3c387632fcaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Type">
+      <UniqueIdentifier>{ec0ee5fa-e547-4514-9e13-6c15ee64d788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Utility">
+      <UniqueIdentifier>{7a5ee096-1d2d-41eb-b70e-101e74fc572d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\DataStore">
+      <UniqueIdentifier>{e28086d8-b127-44ab-9b2a-b0dcffbcfec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Thread">
+      <UniqueIdentifier>{3ad8d751-ffbe-4dfc-8303-6be59a9d1565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Noise">
+      <UniqueIdentifier>{19085bfb-3c03-441f-bf56-1a399b924784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Fractal">
+      <UniqueIdentifier>{569042c0-d185-4db3-a08c-61547e6d9395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Crypto">
+      <UniqueIdentifier>{a16b6059-fc67-4785-a039-87eb77a284f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Core\Algorithm">
+      <UniqueIdentifier>{8ce81f63-1955-4b5a-9ebf-3172f3d34bb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Engine">
+      <UniqueIdentifier>{cb5df788-711e-49f7-8fa5-e6a07e8fe737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Engine\Base">
+      <UniqueIdentifier>{2bb357c7-00b9-487e-be3f-c564725d819a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Engine\Geometry">
+      <UniqueIdentifier>{50e00a12-9c15-4fdb-871a-5cbb8901535d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Engine\Type">
+      <UniqueIdentifier>{2640940b-7454-4c40-9207-53b4213404fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Engine\Texture">
+      <UniqueIdentifier>{1f383e1e-baca-43c4-97c2-e65bdbf2de54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Engine\Animation">
+      <UniqueIdentifier>{d741db46-9766-4233-bda4-ead4426bf750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Engine\Instantiator">
+      <UniqueIdentifier>{04dbebeb-c326-4823-b4b6-be0a8d975f02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Engine\Manager">
+      <UniqueIdentifier>{da245071-98c4-4c48-a583-144edb6c2d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Engine\Collision">
+      <UniqueIdentifier>{d5a1ded2-97de-4029-8809-f4f7a0098d00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\NvTriStrip">
+      <UniqueIdentifier>{723e6e46-baea-4c48-88fb-77e0a7fd1147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene">
+      <UniqueIdentifier>{57c4e854-9151-427b-ab53-05debf6f9516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\Base">
+      <UniqueIdentifier>{7b7125ef-9ed3-4846-9c3f-e3c23737784c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\ColVis">
+      <UniqueIdentifier>{faa081f5-ef75-4c6c-9615-b460fbb78f9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\Container">
+      <UniqueIdentifier>{3aa0a1fa-4696-4a77-8cb2-153715d94009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\Paperdoll">
+      <UniqueIdentifier>{662a01d2-2e5d-456a-8037-6c3c76258e9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\Terrain">
+      <UniqueIdentifier>{9071139f-ea0e-4a64-8f8f-60068e982b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\Widget">
+      <UniqueIdentifier>{fdc47a32-a75e-48a0-84fc-4570fde168a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\Particle">
+      <UniqueIdentifier>{8dd4c91b-517b-47e1-87ce-a28188fe2020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\FX">
+      <UniqueIdentifier>{457cada4-1e9d-403f-8fb9-5a98c932bb37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\Controller">
+      <UniqueIdentifier>{32c3843f-c68a-46e0-a85e-1df334dd81e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\PathEngineVis">
+      <UniqueIdentifier>{97089c15-cd05-47e7-a924-eaba7bd1ec46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\Gizmo">
+      <UniqueIdentifier>{f72d75f9-5a1d-46f3-932f-0e672da8175d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\FX2D">
+      <UniqueIdentifier>{c13bf040-32e3-4a58-a90a-efa1d543789f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\TileMap">
+      <UniqueIdentifier>{ad578b94-0a3f-410e-9442-bb0b39ec532d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\Occlusion">
+      <UniqueIdentifier>{41d4b090-74a3-4a28-a934-65889e370a5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Scene\Proxy">
+      <UniqueIdentifier>{eed5edb1-62fa-485b-b061-ec7011cbb85a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Helper">
+      <UniqueIdentifier>{527b850a-8521-4e6d-99c3-f6bc3aae4d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Fusion">
+      <UniqueIdentifier>{e27660dd-fb38-4cc6-9086-1289f430cc9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\SQL">
+      <UniqueIdentifier>{0351f4df-2f6b-419f-8616-21362a7a58a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\ImageFX">
+      <UniqueIdentifier>{1ac20f97-2388-48c4-a612-64f904dbf351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\PathEngine">
+      <UniqueIdentifier>{fa903492-1ac5-4a35-bf44-d27205f1299d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\UI">
+      <UniqueIdentifier>{855ec968-1460-4112-89b2-91c59fe252ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Mojo">
+      <UniqueIdentifier>{349183b6-7745-4a22-a6a3-9257cab3682b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Components">
+      <UniqueIdentifier>{c71cb0ed-6189-4663-af0a-d29c01ad248e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Components\NavMesh">
+      <UniqueIdentifier>{aa8b0b30-52f1-4f28-a90a-4f30822d252e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Components\SpatialPartition">
+      <UniqueIdentifier>{c3432a9d-8e33-4cf1-81ca-95eda0ef9d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\ExtLink">
+      <UniqueIdentifier>{7974ae61-8696-4613-ab6a-8fdaf2b735c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Process">
+      <UniqueIdentifier>{71a8ed61-28b4-4aab-bcc3-69d344b01240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Renderer">
+      <UniqueIdentifier>{5bc5e045-46bd-42a6-9935-50bb923f4319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Renderer\Cache">
+      <UniqueIdentifier>{aae2f508-fb79-4e08-bff4-33bdc978d849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Renderer\Type">
+      <UniqueIdentifier>{dccec15d-1b12-4a91-a837-885bd6724c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Renderer\Plugin">
+      <UniqueIdentifier>{8de86325-c1a9-427e-8b21-97ec79bf9e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Renderer\RendererNode">
+      <UniqueIdentifier>{1f532698-6a2c-4d6d-b424-fc7065866440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Partition">
+      <UniqueIdentifier>{99f5090f-42fa-493d-8fd3-5e05978dd777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{c57a2e68-155a-4b16-adef-86d30f767621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\FilePackage">
+      <UniqueIdentifier>{2e3f087b-c50e-43a6-ab1f-07619ac04317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\FilePackage\Header Files">
+      <UniqueIdentifier>{35b3bb77-d8a1-4650-a14d-b4a29c2b3d73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\FilePackage\Source Files">
+      <UniqueIdentifier>{98b6fcdf-a7fd-4f49-894b-dc7e0f3454a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\dxtLib">
+      <UniqueIdentifier>{123c011a-22fd-4aed-99f5-b203aff25c7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ImageLib">
+      <UniqueIdentifier>{0297db9e-b560-4579-85dc-cf9f72f7ed1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ImageLib\jpeg">
+      <UniqueIdentifier>{d8fcaea2-4d27-429a-847c-62b1662f371d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ImageLib\jpeg\Source Files">
+      <UniqueIdentifier>{cb360ba6-f9e5-4a96-bc33-b7b80484c94d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ImageLib\jpeg\Header Files">
+      <UniqueIdentifier>{fdbe407d-5785-420e-a5be-ec0f774e6209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ImageLib\png">
+      <UniqueIdentifier>{e1bc9bdb-d2fc-4c61-9a4a-d9a19393305b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ImageLib\png\Source Files">
+      <UniqueIdentifier>{9816d9c1-d085-4b1c-9587-8caee2046d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ImageLib\png\Header Files">
+      <UniqueIdentifier>{45c68bdb-882c-4a28-921e-7e2fb91ca7be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\lzo">
+      <UniqueIdentifier>{322119e8-1063-4748-825f-f7cf932632fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\zLib">
+      <UniqueIdentifier>{01cd51d1-27a0-4de1-9f40-a1b9808b8c8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\granny">
+      <UniqueIdentifier>{71bfb100-0ec2-4969-a366-eced0cf99688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\granny\include">
+      <UniqueIdentifier>{1a517a67-f505-4e96-b2d3-c2bbda4f2352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\granny\lib">
+      <UniqueIdentifier>{6676a019-88fe-4cab-9851-83bbf1523ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\granny\bin">
+      <UniqueIdentifier>{663f2b9e-524e-49d8-85b6-d0baf977cfc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\granny\source">
+      <UniqueIdentifier>{3e82d48a-2b4f-4525-9f99-63e060d21743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype">
+      <UniqueIdentifier>{25caeb59-f0d4-4eb6-a09e-77a7df23a236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\include">
+      <UniqueIdentifier>{f0b7a1ac-b7c0-4c86-8b9f-566c294b224f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\include\freetype">
+      <UniqueIdentifier>{707673f7-9787-4b16-9e38-426daa618aaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\include\freetype\config">
+      <UniqueIdentifier>{e4b44071-bb56-4a1b-8e34-2ff520e1c3b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\include\freetype\internal">
+      <UniqueIdentifier>{3ae8526e-2a44-4a0c-b934-17899d160cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\include\freetype\internal\services">
+      <UniqueIdentifier>{b494c784-b59e-4c3a-ac2e-b58518a1dda6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src">
+      <UniqueIdentifier>{374a12a9-24a1-433f-818b-28d18f013c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\autofit">
+      <UniqueIdentifier>{9f2b2662-f544-429d-9f4f-fe3983e7619e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\base">
+      <UniqueIdentifier>{f5698f56-0f02-4cd3-b6bb-cda9f879a58a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\bdf">
+      <UniqueIdentifier>{2b81dc85-124a-4b4f-81e5-ac312f28ce01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\cache">
+      <UniqueIdentifier>{595df08f-3287-4230-9fb6-cf066519512d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\cff">
+      <UniqueIdentifier>{c305169e-289b-47c8-8d05-2d55e63b77f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\cid">
+      <UniqueIdentifier>{65bccf8b-b466-4a28-a154-2028059b6682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\gxvalid">
+      <UniqueIdentifier>{569fae24-4b9d-48a1-bed7-d44d4fc24d2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\lzw">
+      <UniqueIdentifier>{fa84970d-5263-415d-81cd-0e816f527b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\otvalid">
+      <UniqueIdentifier>{90d07f2b-a46c-4cf0-b030-99ed152f6990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\pfr">
+      <UniqueIdentifier>{dbd8ae35-4ac9-45c3-8c9e-701d3b4cc750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\psaux">
+      <UniqueIdentifier>{8b8ea950-1aa2-4c5d-b5db-2c74eb0f8838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\pshinter">
+      <UniqueIdentifier>{d8a6742a-f0ee-43be-bf2c-4a0f299d0f35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\psnames">
+      <UniqueIdentifier>{fa1e7304-b95b-4f13-bc33-663db609bfe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\raster">
+      <UniqueIdentifier>{d8d4d317-57de-45ea-a0e7-2ce48115803c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\sfnt">
+      <UniqueIdentifier>{fc90f400-f65d-40dd-8777-2045f4067143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\smooth">
+      <UniqueIdentifier>{ab50e2ff-413e-40fc-9616-06c63805c3ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\truetype">
+      <UniqueIdentifier>{abeaf297-4428-48b4-85e8-94457eb935d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\type1">
+      <UniqueIdentifier>{23a7be62-661c-4ebe-9959-42fbdc29d1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\type42">
+      <UniqueIdentifier>{25c33c4e-eeeb-4278-8ba9-150c147e3bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\freetype\src\winfonts">
+      <UniqueIdentifier>{a5746b58-61f0-4175-8a41-0ddae3cede0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectInput">
+      <UniqueIdentifier>{e90857f2-9f21-4ee6-b4c8-1f37f79ccad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture">
+      <UniqueIdentifier>{c8bf9aa7-d8fb-4716-afa7-ea7b88b76add}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Rune\Engine Settings List.txt">
+      <Filter>Rune Integration</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Rune\Rune.cpp">
+      <Filter>Rune Integration</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Collision\RuCollision_Base.cpp">
+      <Filter>Rune\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Collision\RuCollision_kdTree.cpp">
+      <Filter>Rune\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Collision\RuCollision_kdTree_16.cpp">
+      <Filter>Rune\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Collision\RuCollision_Simple.cpp">
+      <Filter>Rune\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Collision\RuCollisionHierarchy_Base.cpp">
+      <Filter>Rune\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Collision\RuCollisionHierarchy_Quadtree.cpp">
+      <Filter>Rune\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Collision\RuCollisionHierarchy_Simple.cpp">
+      <Filter>Rune\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Collection\RuCollections.cpp">
+      <Filter>Rune\Core\Collection</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Collection\RuCollectionsHash.cpp">
+      <Filter>Rune\Core\Collection</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMath.cpp">
+      <Filter>Rune\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMath_Spline.cpp">
+      <Filter>Rune\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMath_UVTransform.cpp">
+      <Filter>Rune\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMathBase.cpp">
+      <Filter>Rune\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMathCollision.cpp">
+      <Filter>Rune\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMathDistance.cpp">
+      <Filter>Rune\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMathGeometry.cpp">
+      <Filter>Rune\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuMathVector.cpp">
+      <Filter>Rune\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuODESolver_RK4.cpp">
+      <Filter>Rune\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Math\RuVectorMath.cpp">
+      <Filter>Rune\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Memory\RuMalloc.cpp">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Memory\RuMemoryAllocator.cpp">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Memory\RuMemoryHeap.cpp">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Memory\RuMemoryHeapFactory.cpp">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Memory\RuMemoryManager.cpp">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Memory\RuMemUtil.cpp">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Stream\RuArchiveIO.cpp">
+      <Filter>Rune\Core\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Stream\RuStreamIO.cpp">
+      <Filter>Rune\Core\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Type\RuType_BitField.cpp">
+      <Filter>Rune\Core\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Type\RuType_Event.cpp">
+      <Filter>Rune\Core\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Type\RuType_Object.cpp">
+      <Filter>Rune\Core\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Utility\RuUtility.cpp">
+      <Filter>Rune\Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Utility\RuUtility_FunctionScheduler.cpp">
+      <Filter>Rune\Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Utility\RuUtility_Profile.cpp">
+      <Filter>Rune\Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Utility\RuUtility_PropertyContainer.cpp">
+      <Filter>Rune\Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Utility\RuUtility_Stream.cpp">
+      <Filter>Rune\Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\DataStore\RuDataClient.cpp">
+      <Filter>Rune\Core\DataStore</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\DataStore\RuDataServer.cpp">
+      <Filter>Rune\Core\DataStore</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\DataStore\RuDataStore_Base.cpp">
+      <Filter>Rune\Core\DataStore</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\DataStore\RuDataStore_Disk.cpp">
+      <Filter>Rune\Core\DataStore</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\DataStore\RuDataStore_Patcher.cpp">
+      <Filter>Rune\Core\DataStore</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Thread\RuThread_Core.cpp">
+      <Filter>Rune\Core\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Thread\RuThread_CriticalSection.cpp">
+      <Filter>Rune\Core\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Thread\RuThread_SyncObject.cpp">
+      <Filter>Rune\Core\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Thread\RuThread_Worker.cpp">
+      <Filter>Rune\Core\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Thread\RuThread_WorkQueue.cpp">
+      <Filter>Rune\Core\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Noise\RuNoise_Base.cpp">
+      <Filter>Rune\Core\Noise</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Noise\RuNoise_Perlin.cpp">
+      <Filter>Rune\Core\Noise</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Noise\RuNoise_Texture.cpp">
+      <Filter>Rune\Core\Noise</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Noise\RuNoise_Value.cpp">
+      <Filter>Rune\Core\Noise</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Noise\RuNoise_Worley.cpp">
+      <Filter>Rune\Core\Noise</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_Base.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_Composite.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_fBm.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_HeteroTerrain.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_HybridMultifractal.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_Multifractal.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_PostFX_ABS.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_PostFX_Cutoff.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_PostFX_Gain.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_PostFX_Remap.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_PostFX_Square.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_RidgedMultifractal.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Fractal\RuFractal_Shapes.cpp">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Crypto\RuCrypto_MD5.cpp">
+      <Filter>Rune\Core\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Core\Algorithm\RuAlgorithm_PatternMatch_FJS.cpp">
+      <Filter>Rune\Core\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\RuCamera.cpp">
+      <Filter>Rune\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Base\RuEngine_Base.cpp">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Base\RuEngine_DeviceBufferPool.cpp">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Base\RuEngine_Engine.cpp">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Base\RuEngine_EngineResourceArray.cpp">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Base\RuEngine_Settings.cpp">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Base\RuEngine_TexturePool.cpp">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Base\RuMaterialBase.cpp">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Base\RuShader_Composite.cpp">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Geometry\RuMesh_SkinTools.cpp">
+      <Filter>Rune\Engine\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Geometry\RuMeshBase.cpp">
+      <Filter>Rune\Engine\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Geometry\RuMeshCollision.cpp">
+      <Filter>Rune\Engine\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Geometry\RuPolySoup.cpp">
+      <Filter>Rune\Engine\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Geometry\RuPrimitiveToolkit.cpp">
+      <Filter>Rune\Engine\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Texture\RuTexture_Proxy.cpp">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Texture\RuTextureAtlas_Aggregate.cpp">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Texture\RuTextureAtlas_Base.cpp">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Texture\RuTextureAtlas_Paged.cpp">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Texture\RuTextureGenerator.cpp">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Texture\RuTextureUtility.cpp">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Animation\RuAnimBase.cpp">
+      <Filter>Rune\Engine\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Animation\RuAnimTrack.cpp">
+      <Filter>Rune\Engine\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Instantiator\RuMeshInstantiator_Base.cpp">
+      <Filter>Rune\Engine\Instantiator</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Instantiator\RuMeshInstantiators_Common.cpp">
+      <Filter>Rune\Engine\Instantiator</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Manager\RuEngine_InstanceManager.cpp">
+      <Filter>Rune\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Manager\RuEngine_InstanceManager_Base.cpp">
+      <Filter>Rune\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Manager\RuEngine_ResourceManager.cpp">
+      <Filter>Rune\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Manager\RuEngine_ResourceManager_Base.cpp">
+      <Filter>Rune\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Manager\RuEngine_ShaderManager.cpp">
+      <Filter>Rune\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Engine\Collision\RuCollisionStructure_PackedGrid.cpp">
+      <Filter>Rune\Engine\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\NvTriStrip\NvTriStrip.cpp">
+      <Filter>Rune\NvTriStrip</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\NvTriStrip\NvTriStripObjects.cpp">
+      <Filter>Rune\NvTriStrip</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntity_Camera.cpp">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntityACT.cpp">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntityBase.cpp">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntityContainer.cpp">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntityController.cpp">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuEntityModel.cpp">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuHierarchy_GR2.cpp">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Base\RuHierarchyCoupler.cpp">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\ColVis\RuEntity_ColVis.cpp">
+      <Filter>Rune\Scene\ColVis</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Container\RuContainer_Collision.cpp">
+      <Filter>Rune\Scene\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Container\RuContainer_Portal.cpp">
+      <Filter>Rune\Scene\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Container\RuEntity_Container_Quadtree.cpp">
+      <Filter>Rune\Scene\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Container\RuEntityAABBTree.cpp">
+      <Filter>Rune\Scene\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Paperdoll\RuEntityCompositeModel.cpp">
+      <Filter>Rune\Scene\Paperdoll</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Paperdoll\RuEntityPaperdoll.cpp">
+      <Filter>Rune\Scene\Paperdoll</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Paperdoll\RuPaperdollCache.cpp">
+      <Filter>Rune\Scene\Paperdoll</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuEntity_Environment.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuEntityOptimalTerrain.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuEntitySkyDome.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuEntityTerrain.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuEntityTerrain_Common.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_Backdrop.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_Base.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_CloudPlane.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_DoodadSystem.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_EntitySystem.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_TriggerSystem.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_Water.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_WaterBodyDescriptor.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Terrain\RuWorld_ZoneDescriptorContainer.cpp">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_AABB.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_BoneVis.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_ClipRect.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Flag.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_FrustumVis.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Grid.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Label.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Line.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Sphere.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Tetrahedron.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_Text.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntity_Widget_TileGrid.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Widget\RuEntityGizmo.cpp">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Base.cpp">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Doodad.cpp">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Emitter.cpp">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Emitter_Enviro.cpp">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Emitter_Line.cpp">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Sprite.cpp">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Visualizer_Entity.cpp">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Particle\RuEntity_Particle_Visualizer_Sprite.cpp">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\FX\RuEntity_CollectorFX.cpp">
+      <Filter>Rune\Scene\FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\FX\RuEntity_Decal.cpp">
+      <Filter>Rune\Scene\FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\FX\RuEntity_DecalShadow.cpp">
+      <Filter>Rune\Scene\FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\FX\RuEntity_GhostTrail.cpp">
+      <Filter>Rune\Scene\FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\FX\RuEntity_PolyLine.cpp">
+      <Filter>Rune\Scene\FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_AnimCompensator.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Bone.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Camera.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Decal.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_DistanceFader.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Entity.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_EventTrigger.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Frame.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_GhostTrail.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_GlobalAlpha.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_GlobalColor.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Hierarchy.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Highlighter.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_MaterialTexture.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Morph.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Motion.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Orientation.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Particle_Emitter.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Particle_Emitter_Enviro.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Particle_Emitter_Line.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Particle_Visualizer_Entity.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_Particle_Visualizer_Sprite.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_ParticleSystem.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_PolyLine.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_UVFX.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_VisibilityChain.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Controller\RuController_WaterFX.cpp">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\PathEngineVis\RuEntity_PathEngineVis.cpp">
+      <Filter>Rune\Scene\PathEngineVis</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\PathEngineVis\RuEntity_PathGraphVis.cpp">
+      <Filter>Rune\Scene\PathEngineVis</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Gizmo\RuGizmo_Base.cpp">
+      <Filter>Rune\Scene\Gizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Gizmo\RuGizmo_Box.cpp">
+      <Filter>Rune\Scene\Gizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Gizmo\RuGizmo_Mover.cpp">
+      <Filter>Rune\Scene\Gizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Gizmo\RuGizmo_Plane.cpp">
+      <Filter>Rune\Scene\Gizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\FX2D\RuFX2D_Model.cpp">
+      <Filter>Rune\Scene\FX2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\FX2D\RuFX2D_UIFX.cpp">
+      <Filter>Rune\Scene\FX2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\TileMap\RuEntity_TileMap.cpp">
+      <Filter>Rune\Scene\TileMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Occlusion\RuEntity_AntiPortal.cpp">
+      <Filter>Rune\Scene\Occlusion</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Scene\Proxy\RuEntity_Proxy.cpp">
+      <Filter>Rune\Scene\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Helper\RuHelper_Entity.cpp">
+      <Filter>Rune\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Helper\RuHelper_GR2.cpp">
+      <Filter>Rune\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Helper\RuHelper_IRuEntity_Renderable.cpp">
+      <Filter>Rune\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Helper\RuHelper_IRuMaterial.cpp">
+      <Filter>Rune\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Helper\RuHelper_Math.cpp">
+      <Filter>Rune\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Helper\RuHelper_StreamIO.cpp">
+      <Filter>Rune\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Fusion\RuFusion_Actor.cpp">
+      <Filter>Rune\Fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Fusion\RuFusion_Mime.cpp">
+      <Filter>Rune\Fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Fusion\RuFusion_Minimap.cpp">
+      <Filter>Rune\Fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Fusion\RuFusion_Sojourner.cpp">
+      <Filter>Rune\Fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Fusion\RuFusion_Trekker.cpp">
+      <Filter>Rune\Fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Fusion\RuFusion_Trekker_Interface.cpp">
+      <Filter>Rune\Fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Fusion\RuFusion_UIElement.cpp">
+      <Filter>Rune\Fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\SQL\RuSQL_Base.cpp">
+      <Filter>Rune\SQL</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\ImageFX\RuImageFX_Blitter.cpp">
+      <Filter>Rune\ImageFX</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\ImageFX\RuImageFX_Resample.cpp">
+      <Filter>Rune\ImageFX</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\PathEngine\RuPathEngine_Base.cpp">
+      <Filter>Rune\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\PathEngine\RuPathEngine_NodeBuilder.cpp">
+      <Filter>Rune\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\PathEngine\RuPathFinder_AStar.cpp">
+      <Filter>Rune\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\PathEngine\RuPathFinder_Base.cpp">
+      <Filter>Rune\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\PathEngine\RuPathGraph_AStar.cpp">
+      <Filter>Rune\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\PathEngine\RuPathGraph_Base.cpp">
+      <Filter>Rune\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\PathEngine\RuPathHierarchy_Base.cpp">
+      <Filter>Rune\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\PathEngine\RuPathHierarchy_DS.cpp">
+      <Filter>Rune\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\PathEngine\RuPathRover_Base.cpp">
+      <Filter>Rune\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\PathEngine\RuPathRover_Simple.cpp">
+      <Filter>Rune\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\UI\RuUI_Font.cpp">
+      <Filter>Rune\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Mojo\RuMojo_Base.cpp">
+      <Filter>Rune\Mojo</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Mojo\RuMojo_Helper.cpp">
+      <Filter>Rune\Mojo</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Components\NavMesh\RuNavMesh_Base.cpp">
+      <Filter>Rune\Components\NavMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Components\SpatialPartition\RuSpatialPartition_Base.cpp">
+      <Filter>Rune\Components\SpatialPartition</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\ExtLink\RuExtLink_Granny.cpp">
+      <Filter>Rune\ExtLink</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Process\RuProcess_ConsoleChild.cpp">
+      <Filter>Rune\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\RuRenderer.cpp">
+      <Filter>Rune\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\Cache\RuSkinCache.cpp">
+      <Filter>Rune\Renderer\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\Type\RuRenderer_Type.cpp">
+      <Filter>Rune\Renderer\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_AlphaZ.cpp">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_AquaFX.cpp">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_BlendFX.cpp">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_DistortFX.cpp">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_GlowFX.cpp">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_RTLightMap.cpp">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_SubmergeFX.cpp">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\Plugin\RuRendererPlugin_VizCon.cpp">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\RendererNode\RuRendererNode_RenderContext.cpp">
+      <Filter>Rune\Renderer\RendererNode</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\RendererNode\RuRendererNode_SetScissor.cpp">
+      <Filter>Rune\Renderer\RendererNode</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\RendererNode\RuRendererNode_TextureCopy.cpp">
+      <Filter>Rune\Renderer\RendererNode</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\RendererNode\RuRendererNode_UI.cpp">
+      <Filter>Rune\Renderer\RendererNode</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Renderer\RendererNode\RuRendererNode_ViewportClear.cpp">
+      <Filter>Rune\Renderer\RendererNode</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Partition\RuPartition_QuadTree.cpp">
+      <Filter>Rune\Partition</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\FilePackage\cFileObj.cpp">
+      <Filter>Tools\FilePackage\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\FilePackage\cFilePackage.cpp">
+      <Filter>Tools\FilePackage\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\FilePackage\cImgFile.cpp">
+      <Filter>Tools\FilePackage\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\FilePackage\compressFile.cpp">
+      <Filter>Tools\FilePackage\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\dxtLib\dxtutility.cpp">
+      <Filter>Tools\dxtLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImage.cpp">
+      <Filter>Tools\ImageLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImageBMP.cpp">
+      <Filter>Tools\ImageLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImageGIF.cpp">
+      <Filter>Tools\ImageLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImageJPG.cpp">
+      <Filter>Tools\ImageLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImagePCX.cpp">
+      <Filter>Tools\ImageLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImagePNG.cpp">
+      <Filter>Tools\ImageLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\cImageTGA.cpp">
+      <Filter>Tools\ImageLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcapimin.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcapistd.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jccoefct.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jccolor.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcdctmgr.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jchuff.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcinit.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcmainct.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcmarker.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcmaster.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcomapi.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcparam.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcphuff.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcprepct.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jcsample.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jctrans.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdapimin.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdapistd.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdatadst.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdatasrc.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdcoefct.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdcolor.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jddctmgr.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdhuff.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdinput.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdmainct.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdmarker.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdmaster.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdmerge.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdphuff.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdpostct.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdsample.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jdtrans.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jerror.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jfdctflt.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jfdctfst.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jfdctint.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jidctflt.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jidctfst.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jidctint.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jidctred.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jmemmgr.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jmemnobs.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jquant1.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jquant2.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\jpeg\jutils.c">
+      <Filter>Tools\ImageLib\jpeg\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\png.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngerror.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pnggccrd.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngget.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngmem.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngpread.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngread.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngrio.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngrtran.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngrutil.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngset.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngtrans.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngvcrd.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngwio.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngwrite.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngwtran.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\ImageLib\png\pngwutil.c">
+      <Filter>Tools\ImageLib\png\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\adler32.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\compress.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\crc32.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\deflate.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\gzio.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\infback.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\inffast.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\inflate.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\inftrees.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\trees.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\uncompr.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\zLib\zutil.c">
+      <Filter>Tools\zLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\arithbit.c">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\binktc.c">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\encode.c">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_animation.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_animation_binding.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_art_tool_info.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_basis_conversion.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_bink.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_bink0_compression.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_bink1_compression.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_bone_operations.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_bspline.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_bspline_buffers.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_bspline_solver.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_bspline_solver_core.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_bspline_solver_debugging.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_camera.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_compress_curve.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_compression_tools.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_control.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_controlled_animation.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_controlled_pose.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_crc.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_curve.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_dag.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_data_type_conversion.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_data_type_definition.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_data_type_io.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_deformers.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_degree_of_freedom.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_exporter_info.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_file.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_file_builder.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_file_compressor.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_file_format.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_file_info.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_file_operations.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_file_reader.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_file_writer.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_fixed_allocator.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_generic_deformers.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_ik.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_image_operations.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_intersection.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_local_pose.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_log.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_material.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_math.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_member_iterator.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_memory.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_memory_arena.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_memory_file_reader.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_memory_file_writer.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_mesh.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_mesh_binding.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_mesh_builder.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_mesh_deformer.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_model.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_model_control_binding.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_model_instance.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_oodle0_compression.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_oodle1_compression.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_periodic_loop.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_pixel_layout.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_platform_convert.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_pointer_hash.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_rt_common.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_s3tc.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_sieve.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_skeleton.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_skeleton_builder.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_stack_allocator.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_startup.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_stat_hud.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_statistics.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_string.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_string_formatting.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_string_table.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_tangent_frame.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_test_types.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_texture.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_texture_builder.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_thread_safety.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_track_group.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_track_group_builder.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_track_group_sampler.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_track_mask.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_track_sampler.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_transform.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_tri_topology.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_type_listing.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_units.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_variant_builder.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_version_checking.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_vertex_data.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\granny_world_pose.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\radarith.c">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\radlz.c">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\varbits.c">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\wavelet.c">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\win32_granny_assert.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\win32_granny_dll.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\win32_granny_file_operations.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\win32_granny_file_reader.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\win32_granny_file_writer.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\win32_granny_memory.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\win32_granny_msvc_stubs.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\win32_granny_startup.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\win32_granny_system_clock.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\win32_granny_windows.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\x86_granny_accelerated_deformers.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\x86_granny_bone_operations.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\granny\source\x86_granny_cpu_queries.cpp">
+      <Filter>Tools\granny\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\afangles.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\afcjk.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\afdummy.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\afglobal.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\afhints.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\afindic.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\aflatin.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\afloader.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\afmodule.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\afwarp.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\autofit\autofit.c">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftadvanc.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftapi.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftbase.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftbbox.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftbdf.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftbitmap.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftcalc.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftcid.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftdbgmem.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftdebug.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftfstype.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftgasp.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftgloadr.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftglyph.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftgxval.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftinit.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftlcdfil.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftmm.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftnames.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftobjs.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftotval.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftoutln.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftpatent.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftpfr.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftrfork.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftstream.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftstroke.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftsynth.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftsystem.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\fttrigon.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\fttype1.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftutil.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftwinfnt.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\base\ftxf86.c">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\bdf\bdf.c">
+      <Filter>Tools\freetype\src\bdf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\bdf\bdfdrivr.c">
+      <Filter>Tools\freetype\src\bdf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\bdf\bdflib.c">
+      <Filter>Tools\freetype\src\bdf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cache\ftcache.c">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cache\ftcbasic.c">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cache\ftccache.c">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cache\ftccmap.c">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cache\ftcglyph.c">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cache\ftcimage.c">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cache\ftcmanag.c">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cache\ftcmru.c">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cache\ftcsbits.c">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cff\cff.c">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cff\cffcmap.c">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cff\cffdrivr.c">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cff\cffgload.c">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cff\cffload.c">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cff\cffobjs.c">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cff\cffparse.c">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cid\cidgload.c">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cid\cidload.c">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cid\cidobjs.c">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cid\cidparse.c">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cid\cidriver.c">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\cid\type1cid.c">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvalid.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvbsln.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvcommn.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvfeat.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvfgen.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvjust.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvkern.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvlcar.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmod.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort0.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort1.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort2.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort4.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmort5.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx0.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx1.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx2.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx4.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvmorx5.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvopbd.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvprop.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\gxvalid\gxvtrak.c">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\lzw\ftlzw.c">
+      <Filter>Tools\freetype\src\lzw</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\lzw\ftzopen.c">
+      <Filter>Tools\freetype\src\lzw</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\otvalid\otvalid.c">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\otvalid\otvbase.c">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\otvalid\otvcommn.c">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\otvalid\otvgdef.c">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\otvalid\otvgpos.c">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\otvalid\otvgsub.c">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\otvalid\otvjstf.c">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\otvalid\otvmath.c">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\otvalid\otvmod.c">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pfr\pfr.c">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pfr\pfrcmap.c">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pfr\pfrdrivr.c">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pfr\pfrgload.c">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pfr\pfrload.c">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pfr\pfrobjs.c">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pfr\pfrsbit.c">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\psaux\afmparse.c">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\psaux\psaux.c">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\psaux\psauxmod.c">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\psaux\psconv.c">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\psaux\psobjs.c">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\psaux\t1cmap.c">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\psaux\t1decode.c">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pshinter\pshalgo.c">
+      <Filter>Tools\freetype\src\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pshinter\pshglob.c">
+      <Filter>Tools\freetype\src\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pshinter\pshinter.c">
+      <Filter>Tools\freetype\src\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pshinter\pshmod.c">
+      <Filter>Tools\freetype\src\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\pshinter\pshrec.c">
+      <Filter>Tools\freetype\src\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\psnames\psmodule.c">
+      <Filter>Tools\freetype\src\psnames</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\psnames\psnames.c">
+      <Filter>Tools\freetype\src\psnames</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\raster\ftraster.c">
+      <Filter>Tools\freetype\src\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\raster\ftrend1.c">
+      <Filter>Tools\freetype\src\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\raster\raster.c">
+      <Filter>Tools\freetype\src\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\sfnt\sfdriver.c">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\sfnt\sfnt.c">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\sfnt\sfobjs.c">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\sfnt\ttbdf.c">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\sfnt\ttcmap.c">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\sfnt\ttkern.c">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\sfnt\ttload.c">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\sfnt\ttmtx.c">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\sfnt\ttpost.c">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\sfnt\ttsbit.c">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\smooth\ftgrays.c">
+      <Filter>Tools\freetype\src\smooth</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\smooth\ftsmooth.c">
+      <Filter>Tools\freetype\src\smooth</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\smooth\smooth.c">
+      <Filter>Tools\freetype\src\smooth</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\truetype\truetype.c">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\truetype\ttdriver.c">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\truetype\ttgload.c">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\truetype\ttgxvar.c">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\truetype\ttinterp.c">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\truetype\ttobjs.c">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\truetype\ttpload.c">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type1\t1afm.c">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type1\t1driver.c">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type1\t1gload.c">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type1\t1load.c">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type1\t1objs.c">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type1\t1parse.c">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type1\type1.c">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type42\t42drivr.c">
+      <Filter>Tools\freetype\src\type42</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type42\t42objs.c">
+      <Filter>Tools\freetype\src\type42</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type42\t42parse.c">
+      <Filter>Tools\freetype\src\type42</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\type42\type42.c">
+      <Filter>Tools\freetype\src\type42</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\freetype\src\winfonts\winfnt.c">
+      <Filter>Tools\freetype\src\winfonts</Filter>
+    </ClCompile>
+    <ClCompile Include="directinput\directinput.cpp">
+      <Filter>DirectInput</Filter>
+    </ClCompile>
+    <ClCompile Include="texture\textureimage.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rune\Rune.h">
+      <Filter>Rune Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Collection\RuCollection_2DGrid.h">
+      <Filter>Rune\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Collision\RuCollision_Base.h">
+      <Filter>Rune\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Collision\RuCollision_kdTree.h">
+      <Filter>Rune\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Collision\RuCollision_kdTree_16.h">
+      <Filter>Rune\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Collision\RuCollision_Simple.h">
+      <Filter>Rune\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Collision\RuCollisionHierarchy_Base.h">
+      <Filter>Rune\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Collision\RuCollisionHierarchy_Quadtree.h">
+      <Filter>Rune\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Collision\RuCollisionHierarchy_Simple.h">
+      <Filter>Rune\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Collision\RuType_Collision.h">
+      <Filter>Rune\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Collection\RuCollection_TernaryStringTree.h">
+      <Filter>Rune\Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Collection\RuCollections.h">
+      <Filter>Rune\Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Collection\RuCollectionsHash.h">
+      <Filter>Rune\Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Collection\RuCollectionsLRU.h">
+      <Filter>Rune\Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Collection\RuCollectionsTree.h">
+      <Filter>Rune\Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Exception\RuExceptions.h">
+      <Filter>Rune\Core\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuMath.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuMath_Spline.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuMath_UVTransform.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuMathBase.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuMathCollision.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuMathDistance.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuMathGeometry.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuMathSSE.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuMathVector.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuODESolver_RK4.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Math\RuVectorMath.h">
+      <Filter>Rune\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Memory\RuMalloc.h">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Memory\RuMemoryAllocator.h">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Memory\RuMemoryHeap.h">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Memory\RuMemoryHeapFactory.h">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Memory\RuMemoryManager.h">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Memory\RuMemUtil.h">
+      <Filter>Rune\Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Stream\RuArchiveIO.h">
+      <Filter>Rune\Core\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Stream\RuStreamIO.h">
+      <Filter>Rune\Core\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Type\RuType_Base.h">
+      <Filter>Rune\Core\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Type\RuType_BitField.h">
+      <Filter>Rune\Core\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Type\RuType_Event.h">
+      <Filter>Rune\Core\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Type\RuType_Object.h">
+      <Filter>Rune\Core\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Utility\RuUtility.h">
+      <Filter>Rune\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Utility\RuUtility_FunctionScheduler.h">
+      <Filter>Rune\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Utility\RuUtility_Profile.h">
+      <Filter>Rune\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Utility\RuUtility_PropertyContainer.h">
+      <Filter>Rune\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Utility\RuUtility_Stream.h">
+      <Filter>Rune\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\DataStore\RuDataClient.h">
+      <Filter>Rune\Core\DataStore</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\DataStore\RuDataServer.h">
+      <Filter>Rune\Core\DataStore</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\DataStore\RuDataStore_Base.h">
+      <Filter>Rune\Core\DataStore</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\DataStore\RuDataStore_Disk.h">
+      <Filter>Rune\Core\DataStore</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\DataStore\RuDataStore_Patcher.h">
+      <Filter>Rune\Core\DataStore</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Thread\RuThread_Core.h">
+      <Filter>Rune\Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Thread\RuThread_CriticalSection.h">
+      <Filter>Rune\Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Thread\RuThread_SyncObject.h">
+      <Filter>Rune\Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Thread\RuThread_Worker.h">
+      <Filter>Rune\Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Thread\RuThread_WorkQueue.h">
+      <Filter>Rune\Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Noise\RuNoise_Base.h">
+      <Filter>Rune\Core\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Noise\RuNoise_Perlin.h">
+      <Filter>Rune\Core\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Noise\RuNoise_Texture.h">
+      <Filter>Rune\Core\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Noise\RuNoise_Value.h">
+      <Filter>Rune\Core\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Noise\RuNoise_Worley.h">
+      <Filter>Rune\Core\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_Base.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_Composite.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_fBm.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_HeteroTerrain.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_HybridMultifractal.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_Multifractal.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_PostFX_ABS.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_PostFX_Cutoff.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_PostFX_Gain.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_PostFX_Remap.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_PostFX_Square.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_RidgedMultifractal.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Fractal\RuFractal_Shapes.h">
+      <Filter>Rune\Core\Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Crypto\RuCrypto_MD5.h">
+      <Filter>Rune\Core\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Core\Algorithm\RuAlgorithm_PatternMatch_FJS.h">
+      <Filter>Rune\Core\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\RuCamera.h">
+      <Filter>Rune\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Base\RuCore.h">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Base\RuEngine_Base.h">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Base\RuEngine_DeviceBufferPool.h">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Base\RuEngine_Engine.h">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Base\RuEngine_EngineResourceArray.h">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Base\RuEngine_Settings.h">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Base\RuEngine_TexturePool.h">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Base\RuMaterialBase.h">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Base\RuShader_Composite.h">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Base\RuShaderBase.h">
+      <Filter>Rune\Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Geometry\RuMesh_SkinTools.h">
+      <Filter>Rune\Engine\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Geometry\RuMeshBase.h">
+      <Filter>Rune\Engine\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Geometry\RuMeshCollision.h">
+      <Filter>Rune\Engine\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Geometry\RuPolySoup.h">
+      <Filter>Rune\Engine\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Geometry\RuPrimitiveToolkit.h">
+      <Filter>Rune\Engine\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Type\RuType_Core.h">
+      <Filter>Rune\Engine\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Type\RuType_Flags.h">
+      <Filter>Rune\Engine\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="rune\engine\type\RuType_FX.h">
+      <Filter>Rune\Engine\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Type\RuType_Vertex.h">
+      <Filter>Rune\Engine\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Texture\RuTexture_Proxy.h">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Texture\RuTextureAtlas_Aggregate.h">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Texture\RuTextureAtlas_Base.h">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Texture\RuTextureAtlas_Paged.h">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Texture\RuTextureGenerator.h">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Texture\RuTextureUtility.h">
+      <Filter>Rune\Engine\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Animation\RuAnimBase.h">
+      <Filter>Rune\Engine\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Animation\RuAnimTrack.h">
+      <Filter>Rune\Engine\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Instantiator\RuMeshInstantiator_Base.h">
+      <Filter>Rune\Engine\Instantiator</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Instantiator\RuMeshInstantiators_Common.h">
+      <Filter>Rune\Engine\Instantiator</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Manager\RuEngine_InstanceManager.h">
+      <Filter>Rune\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Manager\RuEngine_InstanceManager_Base.h">
+      <Filter>Rune\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Manager\RuEngine_ResourceManager.h">
+      <Filter>Rune\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Manager\RuEngine_ResourceManager_Base.h">
+      <Filter>Rune\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Manager\RuEngine_ShaderManager.h">
+      <Filter>Rune\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Engine\Collision\RuCollisionStructure_PackedGrid.h">
+      <Filter>Rune\Engine\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\NvTriStrip\NvTriStrip.h">
+      <Filter>Rune\NvTriStrip</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\NvTriStrip\NvTriStripObjects.h">
+      <Filter>Rune\NvTriStrip</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\NvTriStrip\VertexCache.h">
+      <Filter>Rune\NvTriStrip</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Base\RuEntity_Camera.h">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Base\RuEntityACT.h">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Base\RuEntityBase.h">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Base\RuEntityContainer.h">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Base\RuEntityController.h">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Base\RuEntityModel.h">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Base\RuHierarchy_GR2.h">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Base\RuHierarchyCoupler.h">
+      <Filter>Rune\Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\ColVis\RuEntity_ColVis.h">
+      <Filter>Rune\Scene\ColVis</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Container\RuContainer_Collision.h">
+      <Filter>Rune\Scene\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Container\RuContainer_Portal.h">
+      <Filter>Rune\Scene\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Container\RuEntity_Container_Quadtree.h">
+      <Filter>Rune\Scene\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Container\RuEntityAABBTree.h">
+      <Filter>Rune\Scene\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Paperdoll\RuEntityCompositeModel.h">
+      <Filter>Rune\Scene\Paperdoll</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Paperdoll\RuEntityPaperdoll.h">
+      <Filter>Rune\Scene\Paperdoll</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Paperdoll\RuPaperdollCache.h">
+      <Filter>Rune\Scene\Paperdoll</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuEntity_Environment.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuEntityOptimalTerrain.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuEntitySkyDome.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuEntityTerrain.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuEntityTerrain_Common.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_Backdrop.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_Base.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_CloudPlane.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_DoodadSystem.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_EntitySystem.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_TriggerSystem.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_Water.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_WaterBodyDescriptor.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Terrain\RuWorld_ZoneDescriptorContainer.h">
+      <Filter>Rune\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_AABB.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_BoneVis.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_ClipRect.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Flag.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_FrustumVis.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Grid.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Label.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Line.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Sphere.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Tetrahedron.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_Text.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntity_Widget_TileGrid.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Widget\RuEntityGizmo.h">
+      <Filter>Rune\Scene\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Base.h">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Doodad.h">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Emitter.h">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Emitter_Enviro.h">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Emitter_Line.h">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Sprite.h">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Visualizer_Entity.h">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Particle\RuEntity_Particle_Visualizer_Sprite.h">
+      <Filter>Rune\Scene\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\FX\RuEntity_CollectorFX.h">
+      <Filter>Rune\Scene\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\FX\RuEntity_Decal.h">
+      <Filter>Rune\Scene\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\FX\RuEntity_DecalShadow.h">
+      <Filter>Rune\Scene\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\FX\RuEntity_GhostTrail.h">
+      <Filter>Rune\Scene\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\FX\RuEntity_PolyLine.h">
+      <Filter>Rune\Scene\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_AnimCompensator.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Bone.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Camera.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Decal.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_DistanceFader.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Entity.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_EventTrigger.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Frame.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_GhostTrail.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_GlobalAlpha.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_GlobalColor.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Hierarchy.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Highlighter.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_MaterialTexture.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Morph.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Motion.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Orientation.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Particle_Emitter.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Particle_Emitter_Enviro.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Particle_Emitter_Line.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Particle_Visualizer_Entity.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_Particle_Visualizer_Sprite.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_ParticleSystem.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_PolyLine.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_UVFX.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_VisibilityChain.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Controller\RuController_WaterFX.h">
+      <Filter>Rune\Scene\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\PathEngineVis\RuEntity_PathEngineVis.h">
+      <Filter>Rune\Scene\PathEngineVis</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\PathEngineVis\RuEntity_PathGraphVis.h">
+      <Filter>Rune\Scene\PathEngineVis</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Gizmo\RuGizmo_Base.h">
+      <Filter>Rune\Scene\Gizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Gizmo\RuGizmo_Box.h">
+      <Filter>Rune\Scene\Gizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Gizmo\RuGizmo_Mover.h">
+      <Filter>Rune\Scene\Gizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Gizmo\RuGizmo_Plane.h">
+      <Filter>Rune\Scene\Gizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\FX2D\RuFX2D_Model.h">
+      <Filter>Rune\Scene\FX2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\FX2D\RuFX2D_UIFX.h">
+      <Filter>Rune\Scene\FX2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\TileMap\RuEntity_TileMap.h">
+      <Filter>Rune\Scene\TileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Occlusion\RuEntity_AntiPortal.h">
+      <Filter>Rune\Scene\Occlusion</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Scene\Proxy\RuEntity_Proxy.h">
+      <Filter>Rune\Scene\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Helper\RuHelper_Entity.h">
+      <Filter>Rune\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Helper\RuHelper_GR2.h">
+      <Filter>Rune\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Helper\RuHelper_IRuEntity_Renderable.h">
+      <Filter>Rune\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Helper\RuHelper_IRuMaterial.h">
+      <Filter>Rune\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Helper\RuHelper_Math.h">
+      <Filter>Rune\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Helper\RuHelper_StreamIO.h">
+      <Filter>Rune\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Fusion\RuFusion_Actor.h">
+      <Filter>Rune\Fusion</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Fusion\RuFusion_Mime.h">
+      <Filter>Rune\Fusion</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Fusion\RuFusion_Minimap.h">
+      <Filter>Rune\Fusion</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Fusion\RuFusion_Sojourner.h">
+      <Filter>Rune\Fusion</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Fusion\RuFusion_Trekker.h">
+      <Filter>Rune\Fusion</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Fusion\RuFusion_Trekker_Interface.h">
+      <Filter>Rune\Fusion</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Fusion\RuFusion_UIElement.h">
+      <Filter>Rune\Fusion</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\SQL\RuSQL_Base.h">
+      <Filter>Rune\SQL</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\ImageFX\RuImageFX_Blitter.h">
+      <Filter>Rune\ImageFX</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\ImageFX\RuImageFX_Resample.h">
+      <Filter>Rune\ImageFX</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\PathEngine\RuPathEngine_Base.h">
+      <Filter>Rune\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\PathEngine\RuPathEngine_NodeBuilder.h">
+      <Filter>Rune\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\PathEngine\RuPathFinder_AStar.h">
+      <Filter>Rune\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\PathEngine\RuPathFinder_Base.h">
+      <Filter>Rune\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\PathEngine\RuPathGraph_AStar.h">
+      <Filter>Rune\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\PathEngine\RuPathGraph_Base.h">
+      <Filter>Rune\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\PathEngine\RuPathHierarchy_Base.h">
+      <Filter>Rune\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\PathEngine\RuPathHierarchy_DS.h">
+      <Filter>Rune\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\PathEngine\RuPathRover_Base.h">
+      <Filter>Rune\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\PathEngine\RuPathRover_Simple.h">
+      <Filter>Rune\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\UI\RuUI_Font.h">
+      <Filter>Rune\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Mojo\RuMojo_Base.h">
+      <Filter>Rune\Mojo</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Mojo\RuMojo_Helper.h">
+      <Filter>Rune\Mojo</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Components\NavMesh\RuNavMesh_Base.h">
+      <Filter>Rune\Components\NavMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Components\SpatialPartition\RuSpatialPartition_Base.h">
+      <Filter>Rune\Components\SpatialPartition</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\ExtLink\RuExtLink_Granny.h">
+      <Filter>Rune\ExtLink</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Process\RuProcess_ConsoleChild.h">
+      <Filter>Rune\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\RuRenderer.h">
+      <Filter>Rune\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\Cache\RuSkinCache.h">
+      <Filter>Rune\Renderer\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\Type\RuRenderer_Type.h">
+      <Filter>Rune\Renderer\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_AlphaZ.h">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_AquaFX.h">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_BlendFX.h">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_DistortFX.h">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_GlowFX.h">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_RTLightMap.h">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_SubmergeFX.h">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\Plugin\RuRendererPlugin_VizCon.h">
+      <Filter>Rune\Renderer\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\RendererNode\RuRendererNode_RenderContext.h">
+      <Filter>Rune\Renderer\RendererNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\RendererNode\RuRendererNode_SetScissor.h">
+      <Filter>Rune\Renderer\RendererNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\RendererNode\RuRendererNode_TextureCopy.h">
+      <Filter>Rune\Renderer\RendererNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\RendererNode\RuRendererNode_UI.h">
+      <Filter>Rune\Renderer\RendererNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Renderer\RendererNode\RuRendererNode_ViewportClear.h">
+      <Filter>Rune\Renderer\RendererNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Partition\RuPartition_QuadTree.h">
+      <Filter>Rune\Partition</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\FilePackage\cFileObj.h">
+      <Filter>Tools\FilePackage\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\FilePackage\cFilePackage.h">
+      <Filter>Tools\FilePackage\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\FilePackage\cImgFile.h">
+      <Filter>Tools\FilePackage\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\FilePackage\compressFile.h">
+      <Filter>Tools\FilePackage\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\filepackage\cTSTDictionary.hpp">
+      <Filter>Tools\FilePackage\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\dxtLib\dxtutility.h">
+      <Filter>Tools\dxtLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\cImage.h">
+      <Filter>Tools\ImageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\cImageBMP.h">
+      <Filter>Tools\ImageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\cImageGIF.h">
+      <Filter>Tools\ImageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\cImageJPG.h">
+      <Filter>Tools\ImageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\cImagePCX.h">
+      <Filter>Tools\ImageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\cImagePNG.h">
+      <Filter>Tools\ImageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\cImageTGA.h">
+      <Filter>Tools\ImageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\imagedef.h">
+      <Filter>Tools\ImageLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jchuff.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jconfig.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jdct.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jdhuff.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jerror.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jinclude.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jmemsys.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jmorecfg.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jpegint.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jpeglib.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\jpeg\jversion.h">
+      <Filter>Tools\ImageLib\jpeg\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\png\png.h">
+      <Filter>Tools\ImageLib\png\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\png\pngasmrd.h">
+      <Filter>Tools\ImageLib\png\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\ImageLib\png\pngconf.h">
+      <Filter>Tools\ImageLib\png\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzo1.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzo1a.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzo1b.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzo1c.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzo1f.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzo1x.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzo1y.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzo1z.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzo2a.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzo_asm.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzoconf.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzodefs.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\lzo\lzoutil.h">
+      <Filter>Tools\lzo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\crc32.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\deflate.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\inffast.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\inffixed.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\inflate.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\inftrees.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\trees.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\zconf.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\zconf.in.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\zlib.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\zLib\zutil.h">
+      <Filter>Tools\zLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\include\granny.h">
+      <Filter>Tools\granny\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\include\grn2gr2.h">
+      <Filter>Tools\granny\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\arithbit.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\binktc.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\encode.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_accelerated_deformers.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_animation.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_animation_binding.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_art_tool_info.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_assert.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_basis_conversion.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_bink.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_bink0_compression.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_bink1_compression.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_bone_operations.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_bspline.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_bspline_buffers.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_bspline_inlines.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_bspline_solver.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_bspline_solver_core.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_bspline_solver_debugging.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_c_argument_list.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_camera.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_compiler.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_compress_curve.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_compression_tools.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_control.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_controlled_animation.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_controlled_pose.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_conversions.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_cpp_settings.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_crc.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_curve.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_dag.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_data_type_conversion.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_data_type_definition.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_data_type_io.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_deformers.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_degree_of_freedom.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_exporter_info.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_file.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_file_builder.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_file_compressor.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_file_format.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_file_info.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_file_operations.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_file_reader.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_file_writer.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_fixed_allocator.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_floats.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_generic_deformers.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_ik.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_image_operations.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_intersection.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_intrinsics.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_limits.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_local_pose.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_log.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_material.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_math.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_math_inlines.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_member_iterator.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_memory.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_memory_arena.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_memory_file_reader.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_memory_file_writer.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_mesh.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_mesh_binding.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_mesh_builder.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_mesh_deformer.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_model.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_model_control_binding.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_model_instance.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_namespace.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_oodle0_compression.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_oodle1_compression.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_parameter_checking.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_periodic_loop.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_pixel_layout.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_platform.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_platform_convert.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_pointer_hash.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_prefetch.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_processor.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_s3tc.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_sieve.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_skeleton.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_skeleton_builder.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_stack_allocator.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_startup.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_stat_hud.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_statistics.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_string.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_string_formatting.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_string_table.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_system_clock.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_tangent_frame.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_test_types.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_texture.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_texture_builder.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_thread_safety.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_track_group.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_track_group_builder.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_track_group_sampler.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_track_mask.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_track_sampler.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_transform.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_tri_topology.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_type_listing.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_types.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_units.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_variant_builder.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_version.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_version_checking.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_vertex_data.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_winged_edge.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\granny_world_pose.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\header_postfix.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\header_preamble.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\radarith.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\radbase.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\raddebug.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\radlz.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\radmath.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\radmem.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\radmemutils.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\varbits.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\wavelet.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\win32_granny_dll.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\win32_granny_windows.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\granny\source\x86_granny_cpu_queries.h">
+      <Filter>Tools\granny\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\ft2build.h">
+      <Filter>Tools\freetype\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\freetype.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftadvanc.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftbbox.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftbdf.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftbitmap.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftcache.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftchapters.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftcid.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\fterrdef.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\fterrors.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftgasp.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftglyph.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftgxval.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftgzip.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftimage.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftincrem.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftlcdfil.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftlist.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftlzw.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftmac.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftmm.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftmodapi.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftmoderr.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftotval.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftoutln.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftpfr.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftrender.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftsizes.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftsnames.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftstroke.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftsynth.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftsystem.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\fttrigon.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\fttypes.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftwinfnt.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ftxf86.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\t1tables.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ttnameid.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\tttables.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\tttags.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\ttunpat.h">
+      <Filter>Tools\freetype\include\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\config\ftconfig.h">
+      <Filter>Tools\freetype\include\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\config\ftheader.h">
+      <Filter>Tools\freetype\include\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\config\ftmodule.h">
+      <Filter>Tools\freetype\include\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\config\ftoption.h">
+      <Filter>Tools\freetype\include\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\config\ftstdlib.h">
+      <Filter>Tools\freetype\include\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\autohint.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftcalc.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftdebug.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftdriver.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftgloadr.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftmemory.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftobjs.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftrfork.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftserv.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftstream.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\fttrace.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\ftvalid.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\internal.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\pcftypes.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\psaux.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\pshints.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\sfnt.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\t1types.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\tttypes.h">
+      <Filter>Tools\freetype\include\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svbdf.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svcid.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svgldict.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svgxval.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svkern.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svmm.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svotval.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svpfr.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svpostnm.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svpscmap.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svpsinfo.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svsfnt.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svttcmap.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svtteng.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svttglyf.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svwinfnt.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\include\freetype\internal\services\svxf86nm.h">
+      <Filter>Tools\freetype\include\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\afangles.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\afcjk.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\afdummy.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\aferrors.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\afglobal.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\afhints.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\afindic.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\aflatin.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\afloader.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\afmodule.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\aftypes.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\autofit\afwarp.h">
+      <Filter>Tools\freetype\src\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\base\ftbase.h">
+      <Filter>Tools\freetype\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\bdf\bdf.h">
+      <Filter>Tools\freetype\src\bdf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\bdf\bdfdrivr.h">
+      <Filter>Tools\freetype\src\bdf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\bdf\bdferror.h">
+      <Filter>Tools\freetype\src\bdf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cache\ftccache.h">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cache\ftccback.h">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cache\ftcerror.h">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cache\ftcglyph.h">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cache\ftcimage.h">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cache\ftcmanag.h">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cache\ftcmru.h">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cache\ftcsbits.h">
+      <Filter>Tools\freetype\src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cff\cffcmap.h">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cff\cffdrivr.h">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cff\cfferrs.h">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cff\cffgload.h">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cff\cffload.h">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cff\cffobjs.h">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cff\cffparse.h">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cff\cfftoken.h">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cff\cfftypes.h">
+      <Filter>Tools\freetype\src\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cid\ciderrs.h">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cid\cidgload.h">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cid\cidload.h">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cid\cidobjs.h">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cid\cidparse.h">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cid\cidriver.h">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\cid\cidtoken.h">
+      <Filter>Tools\freetype\src\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvalid.h">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvcommn.h">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxverror.h">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvfeat.h">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvmod.h">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvmort.h">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\gxvalid\gxvmorx.h">
+      <Filter>Tools\freetype\src\gxvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\lzw\ftzopen.h">
+      <Filter>Tools\freetype\src\lzw</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\otvalid\otvalid.h">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\otvalid\otvcommn.h">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\otvalid\otverror.h">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\otvalid\otvgpos.h">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\otvalid\otvmod.h">
+      <Filter>Tools\freetype\src\otvalid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pfr\pfrcmap.h">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pfr\pfrdrivr.h">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pfr\pfrerror.h">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pfr\pfrgload.h">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pfr\pfrload.h">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pfr\pfrobjs.h">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pfr\pfrsbit.h">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pfr\pfrtypes.h">
+      <Filter>Tools\freetype\src\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\psaux\afmparse.h">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\psaux\psauxerr.h">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\psaux\psauxmod.h">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\psaux\psconv.h">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\psaux\psobjs.h">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\psaux\t1cmap.h">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\psaux\t1decode.h">
+      <Filter>Tools\freetype\src\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pshinter\pshalgo.h">
+      <Filter>Tools\freetype\src\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pshinter\pshglob.h">
+      <Filter>Tools\freetype\src\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pshinter\pshmod.h">
+      <Filter>Tools\freetype\src\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pshinter\pshnterr.h">
+      <Filter>Tools\freetype\src\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\pshinter\pshrec.h">
+      <Filter>Tools\freetype\src\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\psnames\psmodule.h">
+      <Filter>Tools\freetype\src\psnames</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\psnames\psnamerr.h">
+      <Filter>Tools\freetype\src\psnames</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\psnames\pstables.h">
+      <Filter>Tools\freetype\src\psnames</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\raster\ftmisc.h">
+      <Filter>Tools\freetype\src\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\raster\ftraster.h">
+      <Filter>Tools\freetype\src\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\raster\ftrend1.h">
+      <Filter>Tools\freetype\src\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\raster\rasterrs.h">
+      <Filter>Tools\freetype\src\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\sfnt\sfdriver.h">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\sfnt\sferrors.h">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\sfnt\sfobjs.h">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\sfnt\ttbdf.h">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\sfnt\ttcmap.h">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\sfnt\ttkern.h">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\sfnt\ttload.h">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\sfnt\ttmtx.h">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\sfnt\ttpost.h">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\sfnt\ttsbit.h">
+      <Filter>Tools\freetype\src\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\smooth\ftgrays.h">
+      <Filter>Tools\freetype\src\smooth</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\smooth\ftsmerrs.h">
+      <Filter>Tools\freetype\src\smooth</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\smooth\ftsmooth.h">
+      <Filter>Tools\freetype\src\smooth</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\truetype\ttdriver.h">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\truetype\tterrors.h">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\truetype\ttgload.h">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\truetype\ttgxvar.h">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\truetype\ttinterp.h">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\truetype\ttobjs.h">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\truetype\ttpload.h">
+      <Filter>Tools\freetype\src\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type1\t1afm.h">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type1\t1driver.h">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type1\t1errors.h">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type1\t1gload.h">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type1\t1load.h">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type1\t1objs.h">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type1\t1parse.h">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type1\t1tokens.h">
+      <Filter>Tools\freetype\src\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type42\t42drivr.h">
+      <Filter>Tools\freetype\src\type42</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type42\t42error.h">
+      <Filter>Tools\freetype\src\type42</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type42\t42objs.h">
+      <Filter>Tools\freetype\src\type42</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type42\t42parse.h">
+      <Filter>Tools\freetype\src\type42</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\type42\t42types.h">
+      <Filter>Tools\freetype\src\type42</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\winfonts\fnterrs.h">
+      <Filter>Tools\freetype\src\winfonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\freetype\src\winfonts\winfnt.h">
+      <Filter>Tools\freetype\src\winfonts</Filter>
+    </ClInclude>
+    <ClInclude Include="directinput\directinput.h">
+      <Filter>DirectInput</Filter>
+    </ClInclude>
+    <ClInclude Include="texture\textureimage.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\filepackage\FileHashTable.h">
+      <Filter>Tools\FilePackage\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Tools\lzo\lzo2.lib">
+      <Filter>Tools\lzo</Filter>
+    </Library>
+    <Library Include="Tools\granny\lib\granny2.lib">
+      <Filter>Tools\granny\lib</Filter>
+    </Library>
+    <Library Include="Tools\granny\lib\grn2gr2.lib">
+      <Filter>Tools\granny\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tools\granny\bin\gr2_viewer.exe">
+      <Filter>Tools\granny\bin</Filter>
+    </None>
+    <None Include="Tools\granny\bin\granny2.dll">
+      <Filter>Tools\granny\bin</Filter>
+    </None>
+    <None Include="Tools\granny\bin\granny_inspector2.dll">
+      <Filter>Tools\granny\bin</Filter>
+    </None>
+    <None Include="Tools\granny\bin\grn.exe">
+      <Filter>Tools\granny\bin</Filter>
+    </None>
+    <None Include="Tools\granny\bin\grn2gr2.dll">
+      <Filter>Tools\granny\bin</Filter>
+    </None>
+    <None Include="Tools\granny\bin\inspector_tray.exe">
+      <Filter>Tools\granny\bin</Filter>
+    </None>
+    <None Include="Tools\granny\source\contain.inl">
+      <Filter>Tools\granny\source</Filter>
+    </None>
+    <None Include="Tools\granny\source\granny_contain.inl">
+      <Filter>Tools\granny\source</Filter>
+    </None>
+    <None Include="Tools\granny\source\granny_generic_deformer_wrapper.inl">
+      <Filter>Tools\granny\source</Filter>
+    </None>
+    <None Include="Tools\granny\source\granny_generic_deformers.inl">
+      <Filter>Tools\granny\source</Filter>
+    </None>
+    <None Include="Tools\granny\source\granny_stat_hud_container.inl">
+      <Filter>Tools\granny\source</Filter>
+    </None>
+    <None Include="Tools\granny\source\radarith_exact.inl">
+      <Filter>Tools\granny\source</Filter>
+    </None>
+    <None Include="Tools\granny\source\treedisp.inl">
+      <Filter>Tools\granny\source</Filter>
+    </None>
+    <None Include="Tools\granny\source\x86_granny_accelerated_deformer_wrapper.inl">
+      <Filter>Tools\granny\source</Filter>
+    </None>
+    <None Include="Tools\granny\source\x86_granny_accelerated_deformers_custom.inl">
+      <Filter>Tools\granny\source</Filter>
+    </None>
+    <None Include="Tools\granny\source\x86_granny_accelerated_deformers_generated.inl">
+      <Filter>Tools\granny\source</Filter>
+    </None>
+  </ItemGroup>
+</Project>

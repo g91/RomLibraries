@@ -1,0 +1,49 @@
+Setting Name						Description												Allowable Values
+---------------------------------------------------------------------------------------------------------------------
+aquaFX:texture size					Specifies reflection/refraction texture size			[128, 256, 512, 1024]
+
+audioFX:sound fx enable				Enables/disables sound effects							[0, 1]
+audioFX:music enable				Enables/disables music									[0, 1]
+audioFX:ambience volume				Ambience volume											[0, 1]
+audioFX:music volume				Music volume											[0, 1]
+audioFX:sound fx volume				Sound FX volume											[0, 1]
+audioFX:interface sfx volume		Interface sound FX volume								[0, 1]
+
+distortFX:enable					Globally enables/disables the distortion effect			[0, 1]
+distortFX:texture size				Specifies distortion texture size						[128, 256, 512, 1024]
+
+gfx:specular highlight				Enables/disables specular highlights					[0, 1]
+gfx:water reflection				Enables/disables water reflections						[0, 1]
+gfx:water refraction				Enables/disables water refractions						[0, 1]
+gfx:sky detail						Sky detail level										[0, 1]
+
+glowFX:enable						Enables/disables glow effects							[0, 1]
+glowFX:texture size					Specifies glow texture size								[128, 256, 512, 1024]
+glowFX:blur iterations				Specifies the number of iterations to blur				[n]
+
+gm:show hidden						Shows/Hides sprites marked as hidden					[0, 1]
+
+material:distortFX					Per-material toggle to enable distortion effect			[0, 1]
+material:distortFX2Pass				Per-entity toggle to enable distortion effect(2-pass)	[0, 1]
+material:distortFXProjected			Distortion map is mapped via projected coordinates?		[0, 1]
+
+paperdoll:max mip level				Maximum mipmap detail level to load for paperdoll parts	[n]
+
+rtLightmap:enable					Globally enables/disables the real-time lightmapper		[0, 1]
+rtLightmap:texture size				Specifies real-time lightmapper texture size			[64, 128, 256, 512, 1024]
+
+shadow:detail level					Shadow detail level										[0, 3]
+
+terrain:detail level				Terrain detail level									[0, 3]
+terrain:splat detail				Terrain splat detail level								[0, 3]
+terrain:splat technique				Terrain splatting technique to use						[0, 1]
+terrain:detail class				Environmental detail level								[0, 3]
+
+texture:max detail level			Maximum mipmap detail level to load for textures		[n]
+texture:min texture size			Texture size below which max mip level does not apply	[n]
+
+ui:scale							Specifies the UI scale factor							[0.25, 1]
+
+world:view distance					Specifies world far plane distance						[500, oo]
+
+portal:enable						Enables/disables portal containers						[0, 1]

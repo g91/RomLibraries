@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="MD5">
+      <UniqueIdentifier>{406b4fde-6182-417e-8263-efb155012554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zip">
+      <UniqueIdentifier>{c47bc252-b2bb-47ca-8915-0380f365d2c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="curlpp">
+      <UniqueIdentifier>{608dda2b-c424-4aa3-983c-fd6d3b355448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbFile">
+      <UniqueIdentifier>{f0ac9927-c86e-4a43-81c2-36f70275793e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Diff">
+      <UniqueIdentifier>{ca7d27db-aa28-4ace-923d-9d5e647e4be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{d4149ab2-c98a-4ace-8591-e5e1ad39492a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base_Thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base_Thread_impl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDownLoad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertUTF.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IniFile2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinG_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md5\MD5Checksum.cpp">
+      <Filter>MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\unzip.cpp">
+      <Filter>zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\zip.cpp">
+      <Filter>zip</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\buffer.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\curl.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\curlpp.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\easy.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\exception.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\file_trait.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\form.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\ftp_easy.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\http_easy.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\memory_trait.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\slist.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\storage.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\storage_trait.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Curlpp\stream_trait.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="dbFile\DBFile.cpp">
+      <Filter>dbFile</Filter>
+    </ClCompile>
+    <ClCompile Include="diff\debug.cpp">
+      <Filter>Diff</Filter>
+    </ClCompile>
+    <ClCompile Include="diff\FileStream.cpp">
+      <Filter>Diff</Filter>
+    </ClCompile>
+    <ClCompile Include="diff\MatchMap.cpp">
+      <Filter>Diff</Filter>
+    </ClCompile>
+    <ClCompile Include="diff\MDiff.cpp">
+      <Filter>Diff</Filter>
+    </ClCompile>
+    <ClCompile Include="diff\primes.cpp">
+      <Filter>Diff</Filter>
+    </ClCompile>
+    <ClCompile Include="XML\XMLManager.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base_Thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_Thread_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDownLoad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertUTF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IniFile2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinG_Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleIni.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md5\MD5Checksum.h">
+      <Filter>MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="md5\MD5ChecksumDefines.h">
+      <Filter>MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\unzip.h">
+      <Filter>zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\zip.h">
+      <Filter>zip</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\buffer.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\curl.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\curlpp.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\easy.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\exception.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\file_trait.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\form.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\ftp_easy.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\http_easy.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\memory_trait.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\slist.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\storage.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\storage_trait.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\stream_trait.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Curlpp\types.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dbFile\DBFile.h">
+      <Filter>dbFile</Filter>
+    </ClInclude>
+    <ClInclude Include="diff\debug.h">
+      <Filter>Diff</Filter>
+    </ClInclude>
+    <ClInclude Include="diff\FileStream.h">
+      <Filter>Diff</Filter>
+    </ClInclude>
+    <ClInclude Include="diff\jdiffos.h">
+      <Filter>Diff</Filter>
+    </ClInclude>
+    <ClInclude Include="diff\MatchMap.h">
+      <Filter>Diff</Filter>
+    </ClInclude>
+    <ClInclude Include="diff\MDiff.h">
+      <Filter>Diff</Filter>
+    </ClInclude>
+    <ClInclude Include="diff\primes.h">
+      <Filter>Diff</Filter>
+    </ClInclude>
+    <ClInclude Include="XML\XMLManager.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

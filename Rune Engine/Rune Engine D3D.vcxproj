@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B7AFC7B7-7D8F-44F9-81B8-7CAC1E468121}</ProjectGuid>
+    <RootNamespace>RuneEngineD3D</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.29911.84</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\_bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\_build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
+    <TargetName>Rune_D3D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\_bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\_build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
+    <TargetName>Rune_D3D</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Tools\freetype\include;..\..\SDK;..\..\SDK\dx9;..\..\SDK\fmod;..\..\SDK\lua;..\..\Libraries\Tools\tools\luabind;..\..\Libraries\Tools\tools\lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader />
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\SDK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Tools\freetype\include;..\..\SDK;..\..\SDK\dx9;..\..\SDK\fmod;..\..\SDK\lua;..\..\Libraries\Tools\tools\luabind;..\..\Libraries\Tools\tools\lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\SDK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Rune\Direct3D\Engine\RuD3DTextureUtility.cpp" />
+    <ClCompile Include="Rune\Direct3D\Engine\RuEngineD3D.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Base.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Doodad.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Paperdoll.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Skin_Standard.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Standard.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Terrain.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Water.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_2DFX.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Base.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Editor.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Editor_GraphVis.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_FX.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_FX2D_UIFX.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Particle.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Sky.cpp" />
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Widget.cpp" />
+    <ClCompile Include="Rune\Rune Engine D3D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rune\Direct3D\Engine\RuD3DTextureUtility.h" />
+    <ClInclude Include="Rune\Direct3D\Engine\RuEngineD3D.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Base.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Doodad.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Paperdoll.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Skin_Standard.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Standard.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Terrain.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Water.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_2DFX.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Base.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Editor.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Editor_GraphVis.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_FX.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_FX2D_UIFX.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Particle.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Sky.h" />
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Widget.h" />
+    <ClInclude Include="Rune\Rune Engine D3D.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

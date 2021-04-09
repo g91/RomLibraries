@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Rune">
+      <UniqueIdentifier>{958c4ef4-1918-4cd3-9389-8f008cccab30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Direct3D">
+      <UniqueIdentifier>{848b31ef-4798-4e3c-97ce-b1ba1b59b787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Direct3D\Engine">
+      <UniqueIdentifier>{cd9a6ceb-cf9e-4e0c-961a-e4167095087f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Direct3D\Shader">
+      <UniqueIdentifier>{9091fd2a-6f45-4b46-b1b8-f57798e87a14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Direct3D\Shader\SMUNI">
+      <UniqueIdentifier>{c3f3697e-4ad7-4d3f-8021-b8d55ce8f1fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\Direct3D\Shader\SM20EZ">
+      <UniqueIdentifier>{818a8985-4c3b-4a48-aa2e-7af67d54dce7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Rune\Rune Engine D3D.cpp">
+      <Filter>Rune</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Engine\RuD3DTextureUtility.cpp">
+      <Filter>Rune\Direct3D\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Engine\RuEngineD3D.cpp">
+      <Filter>Rune\Direct3D\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_2DFX.cpp">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Base.cpp">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Editor.cpp">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Editor_GraphVis.cpp">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_FX.cpp">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_FX2D_UIFX.cpp">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Particle.cpp">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Sky.cpp">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Widget.cpp">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Base.cpp">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Doodad.cpp">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Paperdoll.cpp">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Skin_Standard.cpp">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Standard.cpp">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Terrain.cpp">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Water.cpp">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rune\Rune Engine D3D.h">
+      <Filter>Rune</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Engine\RuD3DTextureUtility.h">
+      <Filter>Rune\Direct3D\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Engine\RuEngineD3D.h">
+      <Filter>Rune\Direct3D\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_2DFX.h">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Base.h">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Editor.h">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Editor_GraphVis.h">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_FX.h">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_FX2D_UIFX.h">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Particle.h">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Sky.h">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SMUNI\RuShader_SMUNI_Widget.h">
+      <Filter>Rune\Direct3D\Shader\SMUNI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Base.h">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Doodad.h">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Paperdoll.h">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Skin_Standard.h">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Standard.h">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Terrain.h">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\Direct3D\Shader\SM20EZ\RuShader_SM20EZ_Water.h">
+      <Filter>Rune\Direct3D\Shader\SM20EZ</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

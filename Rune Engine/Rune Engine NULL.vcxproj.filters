@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Rune">
+      <UniqueIdentifier>{d75e56dc-6f14-48be-9137-516854ce11f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rune\NULL">
+      <UniqueIdentifier>{d50d7952-768a-444b-9803-46b7927ecdb4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Rune\Rune Engine NULL.cpp">
+      <Filter>Rune</Filter>
+    </ClCompile>
+    <ClCompile Include="Rune\NULL\RuEngine_NULL.cpp">
+      <Filter>Rune\NULL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rune\Rune Engine NULL.h">
+      <Filter>Rune</Filter>
+    </ClInclude>
+    <ClInclude Include="Rune\NULL\RuEngine_NULL.h">
+      <Filter>Rune\NULL</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

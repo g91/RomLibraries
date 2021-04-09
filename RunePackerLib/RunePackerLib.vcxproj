@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{647F0D08-43A3-472F-A70B-C9C29785D4F9}</ProjectGuid>
+    <RootNamespace>RunePackerLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30323.82</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\_bin\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\_build\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./;../../SDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalDependencies>Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;libcurl_a32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../SDK/lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="base_Thread.cpp" />
+    <ClCompile Include="base_Thread_impl.cpp" />
+    <ClCompile Include="CDownLoad.cpp" />
+    <ClCompile Include="ConvertUTF.c" />
+    <ClCompile Include="Curlpp\buffer.cpp" />
+    <ClCompile Include="Curlpp\curl.cpp" />
+    <ClCompile Include="Curlpp\curlpp.cpp" />
+    <ClCompile Include="Curlpp\easy.cpp" />
+    <ClCompile Include="Curlpp\exception.cpp" />
+    <ClCompile Include="Curlpp\file_trait.cpp" />
+    <ClCompile Include="Curlpp\form.cpp" />
+    <ClCompile Include="Curlpp\ftp_easy.cpp" />
+    <ClCompile Include="Curlpp\http_easy.cpp" />
+    <ClCompile Include="Curlpp\memory_trait.cpp" />
+    <ClCompile Include="Curlpp\slist.cpp" />
+    <ClCompile Include="Curlpp\storage.cpp" />
+    <ClCompile Include="Curlpp\storage_trait.cpp" />
+    <ClCompile Include="Curlpp\stream_trait.cpp" />
+    <ClCompile Include="dbFile\DBFile.cpp" />
+    <ClCompile Include="diff\debug.cpp" />
+    <ClCompile Include="diff\FileStream.cpp" />
+    <ClCompile Include="diff\MatchMap.cpp" />
+    <ClCompile Include="diff\MDiff.cpp" />
+    <ClCompile Include="diff\primes.cpp" />
+    <ClCompile Include="IniFile2.cpp" />
+    <ClCompile Include="md5\MD5Checksum.cpp" />
+    <ClCompile Include="MinG_Debug.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="XML\XMLManager.cpp" />
+    <ClCompile Include="zip\unzip.cpp" />
+    <ClCompile Include="zip\zip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base_Thread.h" />
+    <ClInclude Include="base_Thread_impl.h" />
+    <ClInclude Include="CDownLoad.h" />
+    <ClInclude Include="ConvertUTF.h" />
+    <ClInclude Include="Curlpp\buffer.hpp" />
+    <ClInclude Include="Curlpp\curl.hpp" />
+    <ClInclude Include="Curlpp\curlpp.hpp" />
+    <ClInclude Include="Curlpp\easy.hpp" />
+    <ClInclude Include="Curlpp\exception.hpp" />
+    <ClInclude Include="Curlpp\file_trait.hpp" />
+    <ClInclude Include="Curlpp\form.hpp" />
+    <ClInclude Include="Curlpp\ftp_easy.hpp" />
+    <ClInclude Include="Curlpp\http_easy.hpp" />
+    <ClInclude Include="Curlpp\memory_trait.hpp" />
+    <ClInclude Include="Curlpp\slist.hpp" />
+    <ClInclude Include="Curlpp\storage.hpp" />
+    <ClInclude Include="Curlpp\storage_trait.hpp" />
+    <ClInclude Include="Curlpp\stream_trait.hpp" />
+    <ClInclude Include="Curlpp\types.hpp" />
+    <ClInclude Include="dbFile\DBFile.h" />
+    <ClInclude Include="diff\debug.h" />
+    <ClInclude Include="diff\FileStream.h" />
+    <ClInclude Include="diff\jdiffos.h" />
+    <ClInclude Include="diff\MatchMap.h" />
+    <ClInclude Include="diff\MDiff.h" />
+    <ClInclude Include="diff\primes.h" />
+    <ClInclude Include="IniFile2.h" />
+    <ClInclude Include="md5\MD5Checksum.h" />
+    <ClInclude Include="md5\MD5ChecksumDefines.h" />
+    <ClInclude Include="MinG_Debug.h" />
+    <ClInclude Include="SimpleIni.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="XML\XMLManager.h" />
+    <ClInclude Include="zip\unzip.h" />
+    <ClInclude Include="zip\zip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
