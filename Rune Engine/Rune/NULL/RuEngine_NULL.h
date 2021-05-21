@@ -8,12 +8,14 @@
 	@date 2006/10/31
 */
 
+
 #ifndef _RUENGINE_NULL_H_
 #define _RUENGINE_NULL_H_
 
 #include "../Engine/Base/RuEngine_Engine.h"
 
 #pragma unmanaged
+
 
 // Forward declarations
 class CRuEngine_NULL;
@@ -75,6 +77,7 @@ public:
 };
 
 // ************************************************************************************************************************************************************
+
 
 /*!
 	CRuIndexBuffer_NULL

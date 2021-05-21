@@ -44,10 +44,12 @@ CRuVertexDeclaration_NULL::~CRuVertexDeclaration_NULL()
 
 void CRuVertexDeclaration_NULL::Invalidate()
 {
+
 }
 
 BOOL CRuVertexDeclaration_NULL::IsInvalidated()
 {
+
 	return FALSE;
 }
 
@@ -58,6 +60,7 @@ BOOL CRuVertexDeclaration_NULL::Restore()
 
 const CRuVertexElement *CRuVertexDeclaration_NULL::GetVertexElements() const
 {
+
 	return NULL;
 }
 

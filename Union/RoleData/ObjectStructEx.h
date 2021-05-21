@@ -1,15 +1,17 @@
 #pragma once
 #include "ObjectStruct.h"
 #include "ReaderClass/ReaderClass.h"
+
 struct	DB_GameObjDbIndexStruct
 {
 	int     GUID;
-	char    Name[32];
+	char    Name[64];
 	int     ImageID;
 	char	FuncName[32];
 	char	DataGroup[32];
 	int		NodeID;
 };
+
 struct DBProcRateStruct
 {
 	union
@@ -25,6 +27,7 @@ struct DBProcRateStruct
 		};
 	};
 };
+
 struct DB_ScriptDBStruct
 {
 	int     Type;
@@ -32,6 +35,7 @@ struct DB_ScriptDBStruct
 	char    Name[64];
 	char    Arg[128];
 };
+
 struct	DB_GameObjDbStruct
 {
 	GameObjDbStruct GameData;
@@ -43,15 +47,20 @@ struct	DB_GameObjDbStruct
 	char    LockAccount[32];
 	char	DataGroup[32];
 	int     Zone[3];
+	int     Zone2[4];
 	DBProcRateStruct    ProcRate;
 	int		ZoneID;
 	int		TagID;
 	int		VersionID;
 	bool	Translate;
+
 	void Init()
 	{
 	}
 };
+
+
+
 struct	GameObjDbStructEx : public GameObjDbStruct
 {
 	bool IsEmpty();
