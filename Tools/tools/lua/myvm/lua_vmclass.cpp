@@ -21,6 +21,30 @@ vector<PlotRunTimeEvent*>	PlotRunTimeEvent::_ItemList;
 vector<int>					PlotRunTimeEvent::_UnUsed;
 bool						PlotRunTimeEvent::_DestroyEvent = false;	//是否有物件要刪除
 
+
+ofstream	ofile;
+void add_log(char* LOG_FILE, const char* fmt, ...)
+{
+	ofile.open(LOG_FILE, ios::app);
+
+	va_list va_alist;
+	char logbuf[256] = { 0 };
+
+	va_start(va_alist, fmt);
+	vsnprintf(logbuf + strlen(logbuf), sizeof(logbuf) - strlen(logbuf), fmt, va_alist);
+	va_end(va_alist);
+
+	ofile << logbuf << endl;
+
+	ofile.close();
+}
+
+
+
+
+
+
+
 #ifdef _LUA_HOOK_ENABLE_
 void callhook(lua_State* L, lua_Debug* ar)
 {
@@ -403,15 +427,18 @@ void	LUA_VMClass::LoadFile(string FileName)
 	//std::cout << "LUA_VMClass::LoadFile " << FileName.c_str() << std::endl;
 	static char buff[80] = { 0 };
 	int res;
+	add_log("c:\\lualogs\\LUA_VMClass_LoadFile.log", "FileName: %s", FileName.c_str());
 
 	if (res = luaL_loadfile(_St->L_State, FileName.c_str()))
 	{
 		sprintf(buff, "luaL_loadfile( %s )", FileName.c_str());
+		add_log("c:\\lualogs\\LUA_VMClass_LoadFile.log", "%s", buff);
 		DisplayError(_St->L_State, res, buff);
 	}
 	else if (res = lua_pcall(_St->L_State, 0, LUA_MULTRET, 0))
 	{
 		sprintf(buff, "lua_pcall( %s )", FileName.c_str());
+		add_log("c:\\lualogs\\LUA_VMClass_LoadFile.log", "%s", buff);
 		DisplayError(_St->L_State, res, buff);
 	}
 
@@ -703,6 +730,8 @@ void LUA_VMClass::StopAllVM()
 //檢查某一個lua 的劇情是否已在執行中
 bool	LUA_VMClass::CheckLuaFunc(string FuncName)
 {
+	add_log("c:\\lualogs\\LUA_VMClass_CheckLuaFunc.log", "FuncName: %s", FuncName.c_str());
+
 	//	_strlwr( (char*)FuncName.c_str() );	
 	std::transform(FuncName.begin(), FuncName.end(), FuncName.begin(), ::tolower);
 
@@ -825,6 +854,9 @@ ArgTransferStruct* LUA_VMClass::CallLuaFunc(string FuncName, int Target, unsigne
 	if (FuncName.length() == 0 || FuncName[0] == ' ')
 		return NULL;
 
+
+	add_log("c:\\lualogs\\LUA_VMClass_CallLuaFunc.log", "FuncName: %s", FuncName.c_str());
+
 	//_strlwr((char*) FuncName.c_str() );	
 	std::transform(FuncName.begin(), FuncName.end(), FuncName.begin(), ::tolower);
 
@@ -833,6 +865,8 @@ ArgTransferStruct* LUA_VMClass::CallLuaFunc(string FuncName, int Target, unsigne
 		char szBuff[1024];
 		sprintf(szBuff, "\n Plot [ %s ] [ %d ] already running!", FuncName.c_str(), _OwnerID);
 		OutputDebugString(szBuff);
+
+		add_log("c:\\lualogs\\LUA_VMClass_CallLuaFunc.log", "szBuff: %s", szBuff);
 
 		if (_St->OutputErrorFunc)
 			_St->OutputErrorFunc(_OwnerID, Target, FuncName.c_str(), szBuff);
@@ -845,6 +879,7 @@ ArgTransferStruct* LUA_VMClass::CallLuaFunc(string FuncName, int Target, unsigne
 	{
 		OutputDebugString("\nPlot Reg Alloc Error!!");
 
+		add_log("c:\\lualogs\\LUA_VMClass_CallLuaFunc.log", "Plot Reg Alloc Error!!");
 		if (_St->OutputErrorFunc)
 			_St->OutputErrorFunc(_OwnerID, Target, FuncName.c_str(), "\nPlot Reg Alloc Error!!");
 
@@ -869,6 +904,8 @@ ArgTransferStruct* LUA_VMClass::CallLuaFunc(string FuncName, int Target, unsigne
 	if (Reg->L_StateID == -1)
 	{
 		OutputDebugString("\nVirtual Machine Alloc Error!!");
+		add_log("c:\\lualogs\\LUA_VMClass_CallLuaFunc.log", "Virtual Machine Alloc Error!!");
+
 		if (_St->OutputErrorFunc)
 			_St->OutputErrorFunc(_OwnerID, Target, FuncName.c_str(), "\nVirtual Machine Alloc Error!!");
 		if (Listen != NULL)
@@ -1213,6 +1250,9 @@ bool LUA_VMClass::PCall(string _Plot, int OwnerID, int TargetID, vector<MyVMValu
 {
 	char Buf[512];
 
+	Print(LV5, "LUA_VMClass::PCall", "PCall %s OwnerID: %i TargetID: %i", _Plot.c_str(), OwnerID, TargetID);
+	add_log("c:\\lualogs\\LUA_VMClass_PCall.log", "PCall %s OwnerID: %i TargetID: %i", _Plot.c_str(), OwnerID, TargetID);
+
 	unsigned ProcTime = GetTickCount();
 
 	bool Ret = true;
@@ -1280,6 +1320,8 @@ bool LUA_VMClass::PCall(string _Plot, int OwnerID, int TargetID, vector<MyVMValu
 	{
 		sprintf(Buf, "lua_pcall( %s )", _Plot.c_str());
 		DisplayError(LState, PcallRet, Buf);
+		add_log("c:\\lualogs\\LUA_VMClass_PCall.log", "%s", Buf);
+
 		/*
 		char szBuff[1024];
 		char szDebugBuff[1024];
@@ -1433,6 +1475,7 @@ bool LUA_VMClass::PCall(string _Plot, int OwnerID, int TargetID, vector<MyVMValu
 		Func.append(")");
 
 		Print(LV5, "PCall", "function=%s, OwnerID=%d, TargetID=%d, GC size before = %d KB, GC size after = %dKB", Func.c_str(), OwnerID, TargetID, GC_Size1, GC_Size2);
+		add_log("c:\\lualogs\\LUA_VMClass_PCall.log", "function=%s, OwnerID=%d, TargetID=%d, GC size before = %d KB, GC size after = %dKB", Func.c_str(), OwnerID, TargetID, GC_Size1, GC_Size2);
 	}
 
 	_FreeVM(LState_ID);
@@ -1606,7 +1649,6 @@ int LUA_VMClass::GetProcFuncExecuteTime()
 	//	return (*((*(LUA_VMClass::_St)).ProcReg)).ExecuteTime;
 }
 
-//將來源Lua Thread上指定位置的table複製一份到目標Lua Thread (目標Lua Thread不能同等於來源Thread )
 void LUA_VMClass::CopyLuaTable(lua_State* src_thread, int src_idx, lua_State* dest_thread)
 {
 	if (dest_thread == src_thread)
@@ -1697,7 +1739,6 @@ void LUA_VMClass::CopyLuaTable(lua_State* src_thread, int src_idx, lua_State* de
 	}
 }
 
-//將Lua thread上指定位置的變數輸出成字串
 std::string LUA_VMClass::LuaVartoString(lua_State* L, int idx)
 {
 	std::string Result = "";

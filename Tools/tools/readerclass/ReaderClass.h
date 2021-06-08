@@ -1,5 +1,6 @@
 #ifndef	__READERCLASS_H___
 #define __READERCLASS_H___
+
 #include <algorithm>
 #include "malloc/myalloc.h"
 #include "iostream"
@@ -14,6 +15,7 @@
 #include <map>
 #include <vector>
 #include <string>
+
 enum ReadInfoTypeENUM
 {
 	ENUM_Type_FloatPoint = 0,
@@ -41,12 +43,14 @@ enum ReadInfoTypeENUM
 	ENUM_Type_Max,
 	ENUM_Type_FORCE_DWORD = 0x7fffffff,
 };
+
 enum ReadInfoAddrTypeENUM
 {
 	ENUM_Direct_Address = 0,
 	ENUM_Indirect_Address,
 	ENUM_Addr_FORCE_DWORD = 0x7fffffff,
 };
+
 using	namespace  std;
 struct ReadInfoStruct
 {
@@ -59,6 +63,7 @@ struct ReadInfoStruct
 	int Size;
 	int RealSize;
 };
+
 template<class Temp>
 class ReaderClass
 {
@@ -77,19 +82,21 @@ public:
 	char* ReadStr(Temp* Obj, string ValueName);
 	bool WriteStr(Temp* Obj, string ValueName, const char* Str);
 	vector<ReadInfoStruct >& ListByType(ReadInfoTypeENUM Type) { return _ListByType[Type]; };
-	bool SetData(string ValueName, const void* Point, ReadInfoTypeENUM Type, int Size = 0, ReadInfoAddrTypeENUM Flag = ENUM_Indirect_Address, int UserData = 0, int RealSize = 0);
+	bool SetData(const int guid, string ValueName, const void* Point, ReadInfoTypeENUM Type, int Size = 0, ReadInfoAddrTypeENUM Flag = ENUM_Indirect_Address, int UserData = 0, int RealSize = 0);
 	void TransferWChartoUTF8(Temp* Obj, vector< wchar_t*> Data);
 	void PrintReader();
 	static bool EditorPointFilter(const ReadInfoStruct& a, const ReadInfoStruct& b);
 	void PrintPointerInfo();
 	void PrintReaderInfo(string file, string dbName);
 };
+
 template<class Temp>
 ReaderClass<Temp>::~ReaderClass()
 {
 }
+
 template<class Temp>
-bool ReaderClass<Temp>::SetData(string	ValueName, const void* Point, ReadInfoTypeENUM Type, int Size, ReadInfoAddrTypeENUM Flag, int UserData, int RealSize)
+bool ReaderClass<Temp>::SetData(const int guid, string ValueName, const void* Point, ReadInfoTypeENUM Type, int Size, ReadInfoAddrTypeENUM Flag, int UserData, int RealSize)
 {
 	std::transform(ValueName.begin(), ValueName.end(), ValueName.begin(), ::tolower);
 	ReadInfoStruct NewData;
@@ -106,6 +113,7 @@ bool ReaderClass<Temp>::SetData(string	ValueName, const void* Point, ReadInfoTyp
 	_ListByType[Type].push_back(_ReadInfo[ValueName]);
 	return true;
 }
+
 template<class Temp>
 bool ReaderClass<Temp>::EditorPointFilter(const ReadInfoStruct& a, const ReadInfoStruct& b)
 {
